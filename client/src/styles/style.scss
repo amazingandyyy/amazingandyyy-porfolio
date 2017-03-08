@@ -1,0 +1,15 @@
+@import './variable';
+
+html{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    padding-top: 0px;
+    background: white;
+    box-sizing: border-box;
+    font-family: $sans;
+}
+
+@import './home';
