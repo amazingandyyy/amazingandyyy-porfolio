@@ -5,8 +5,9 @@ import $ from 'jquery';
 export default class App extends Component {
   render() {
     return (
-      <div>
-          {this.props.children}
+      <div style={{padding: '70px 20px'}}>
+        <Header />
+        {this.props.children}
       </div>
     );
   }
