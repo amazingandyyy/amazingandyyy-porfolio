@@ -44,8 +44,8 @@ module.exports = {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
       }, {
-        test: /\.(png|gif|jpg|jpeg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000?'
+        test: /\.png$/,
+        loader: 'url-loader?mimetype=image/png'
       }, {
         test: /\.(woff|ttf|eot|svg)(\?[\s\S]+)?$/,
         loader: 'file-loader?emitFile=false'
