@@ -9,6 +9,11 @@
     display: flex;
     flex-direction: row;
     height: 50px;
+    z-index: 99;
+
+    &.fixed {
+        position: fixed;
+    }
 
     .logo{
         width: 180px;

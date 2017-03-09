@@ -1,6 +1,6 @@
 const topics = [{
     title: 'Swift',
-    date: new Date(5, 2014),
+    date: new Date(2014, 5-1, 1),
     comment: 'Apple is super appealing to me, so Swift is the one put me to start my coding journey. XCode playground is where I learned most of the basic logics/concepts such as variable, if-else statement, for-loop...etc. I really emjoy in using XCode, seeing beautiful elements show up in the screem by just drag-and-drop in storyboard is looks amazing and exciting to me. That must be the first moment that I felt I can create/control the world!',
     resources: [{
         title: 'The Complete iOS8 and Swift Course: Learn by Building 15 Real World Apps',
@@ -12,7 +12,7 @@ const topics = [{
 },
 {
     title: 'HTML/CSS',
-    date: new Date(7, 2014),
+    date: new Date(2014, 7-1, 1),
     comment: 'I have some experience about HTML/CSS on codecademy. Soon enough after Rob\'s iOS course, I spent my second $49 on Rob\'s best known web course on udemy. I think there was no reason for me to switch to web development. It\'s all just because I love Rob and udemy gave me an discount. It\'s my first time to creat a site and afte that nothing can stop me bulding website. I keep doing it until today.',
     resources: [{
         title: 'HTML/CSS',
@@ -30,7 +30,7 @@ const topics = [{
 },
 {
     title: 'php/MySQL',
-    date: new Date(4, 2014),
+    date: new Date(2014, 4-1, 1),
     comment: 'If HTML/CSS are not programming language, then php is first web programming language. It\'s my first time tp learn GET/POST http request and my first experience of how implement logics to change HTML codes.',
     resources: [{
         title: 'The Complete iOS8 and Swift Course: Learn by Building 15 Real World Apps',
@@ -48,7 +48,7 @@ const topics = [{
     }]
 },{
     title: 'Ruby on Rails',
-    date: new Date(1, 2015),
+    date: new Date(2015, 1-1, 1),
     comment: 'I once attend a meteor meetup in Taiwan in the summer of 2014, metoer is all how I learned the concept of full-stack framework. I will learn RoR because I feel php is too annoy for me to build big proejct of multiple pages app. I bought RoR tutorial again from Roby on Udemy. After the shock from his complete web course, it made me more sense to stick with him and udemy. ',
     resources: [{
         title: 'The Professional Ruby on Rails Developer',
@@ -60,7 +60,7 @@ const topics = [{
 },
 {
     title: 'CSS ninja with webflow',
-    date: new Date(3, 2015),
+    date: new Date(2015, 3-1, 1),
     comment: 'It is definitely my big moment. After having tastes about Swift, php, RoR. I already tried almost four frameworks. I decided to be JavaScript Ninja. Althoght it turns out I become a CSS ninja in 2015. A JS ninja in 2016 which is one year late. ',
     resources: [{
         title: 'Webflow CSS framework',
@@ -72,7 +72,7 @@ const topics = [{
 },
 {
     title: 'AJAX/jQuery',
-    date: new Date(5, 2015),
+    date: new Date(2015, 5-1, 1),
     comment: 'AJAX is used by Gmail and I can unreviel this power by watching online tutorial. It is one of the thing I kept as treasure once I pick it up. It\'s such a powerful new technics. And jQuery is beautiful and easy to use.',
     resources: [{
         title: 'The Ultimate Web Development Course',
@@ -84,7 +84,7 @@ const topics = [{
 },
 {
     title: 'Review everything JS Algorithm',
-    date: new Date(11, 2015),
+    date: new Date(2015, 11-1, 1),
     comment: 'I earn my first 10K from freelancing and $12K scholarship in Hackathon, but none of them is backend work and none of them is heavy JS-related. I know my dream is to be a JS full-stack developer. So I create a new account on codecademy and FreeCodeCamp start to review what I learn in the past one year.',
     resources: [{
         title: 'Front End Certification',
@@ -117,57 +117,57 @@ const topics = [{
 },
 {
     title: 'jQuery',
-    date: new Date(4, 2016),
+    date: new Date(2016, 4-1, 1),
     comment: 'jQuery is just a easy way to select DOM elements and do some manipulation like append, add props, change style HTTP request, and those things you can also do in s Javascript.'
 },
 {
     title: 'Node',
-    date: new Date(5, 2016),
+    date: new Date(2016, 5-1, 1),
     comment: 'Node is a open source project that make Javascript available outside browser enviroment. It\'s powered by v8 engine and available in linux enviroment, this is what make it to be use for backend.'
 },
 {
     title: 'Express',
-    date: new Date(5, 2016),
+    date: new Date(2016, 5-1, 1),
     comment: 'Express make routing for node powered server stable, easy to use. The concpet of middleware is super useful.'
 },
 {
     title: 'MongoDB',
-    date: new Date(5, 2016),
+    date: new Date(2016, 5-1, 1),
     comment: 'MongoDB is a noSQL database, you can use it like a JSON files. Mongoose API make MongoDB easier to query and manipulate. MongoDB is super easy to scale up and easy to set up. It is easy to connect to any Node backend or available in almost any cloud computing platforms.'
 },
 {
     title: 'Angular 1.5',
-    date: new Date(5, 2016),
+    date: new Date(2016, 5-1, 1),
     comment: 'Angular 1.5 is the first front end framework that I am expert on. It\'s outage now but its wave keeps pushing people\'s passion about innovative frontend framework. I built over 50 projects in Angular 1.5 then move on to Angular 2 and React later on.'
 },
 {
     title: 'AWS S3',
-    date: new Date(6, 2016),
+    date: new Date(2016, 6-1, 1),
     comment: 'S3 is developers\'s dropbox. It\'s API is extremely easy to use and super stable to make any content accessible to anywhere on the worldwide internet.'
 },
 {
     title: 'Microsoft Cognitive API',
-    date: new Date(6, 2016),
+    date: new Date(2016, 6-1, 1),
     comment: 'First evet Cognitive API I have ever use. The API can give back an neat JSON inclduing advance information about an image such as promary color, keyworks, descriptions...etc I built a project called VoiceAlbum which will describe an image to blind people.'
 },
 {
     title: 'Responsive Voice API',
-    date: new Date(6, 2016),
+    date: new Date(2016, 6-1, 1),
     comment: 'My first experience of voice API, it helps me use Amazon Alexa API later on.'
 },
 {
     title: 'Stripe API',
-    date: new Date(7, 2016),
+    date: new Date(2016, 7-1, 1),
     comment: 'The best payment API and provide developer a extremely good sandbox. It\'s my first experience of OAuth API.'
 },
 {
     title: 'Twilio SMS',
-    date: new Date(7, 2016),
+    date: new Date(2016, 7-1, 1),
     comment: 'Twilio\'s annul CONNECT confereince is my first attending to such giant event. Twilio SMS API is one of the most easy and powerful API that give me power to interact with the outside real world.'
 },
 {
     title: 'Angular 2 RC',
-    date: new Date(7, 2016),
+    date: new Date(2016, 7-1, 1),
     comment: 'My second frontend framework that I am expert on. I buid two website with Angular 2 in production, and totally love the concept of components and the well-doc on Angular 2 helps not just a bit.',
     resources: [{
         title: 'Angular 2 - The Complete Guide',
@@ -180,22 +180,22 @@ const topics = [{
 },
 {
     title: 'Amazon Echo',
-    date: new Date(10, 2016),
+    date: new Date(2016, 10-1, 1),
     comment: 'I use Amazon Echo API in a Food Hackathon in SF. Build my first Voice bot app.'
 },
 {
     title: 'AWS Lambda',
-    date: new Date(10, 2016),
+    date: new Date(2016, 10-1, 1),
     comment: 'I built my first microservice.'
 },
 {
     title: 'Facebook Bot',
-    date: new Date(11, 2016),
+    date: new Date(2016, 11-1, 1),
     comment: 'I built my first messanger Bot.'
 },
 {
     title: 'React Native',
-    date: new Date(11, 2016),
+    date: new Date(2016, 11-1, 1),
     comment: 'RN is the best way to try React becasue the enviroment setting and learn curve is almost zero. I tried RN and decide to switch from Angular 2 for React/Redux because the react ecosystem is more fun and flexible.',
     resources: [{
         title: 'The Complete React Native and Redux Course',
@@ -207,7 +207,7 @@ const topics = [{
 },
 {
     title: 'React/Redux, ES6',
-    date: new Date(12, 2016),
+    date: new Date(2016, 12-1, 1),
     comment: 'I pick React/Redux in a Chirstmas Holiday and totally fall in love it.',
     resources: [{
         title: 'Modern React with Redux',
@@ -226,7 +226,7 @@ const topics = [{
 },
 {
     title: 'Webpack',
-    date: new Date(12, 2016),
+    date: new Date(2016, 12-1, 1),
     comment: 'I used to and am good at use gulp before. The concept of Webpack is new and useful as a result.',
     resources: [{
         title: 'Webpack 2: The Complete Developer\'s Guide',
@@ -238,12 +238,12 @@ const topics = [{
 },
 {
     title: 'AWS Elastic Beantalk',
-    date: new Date(12, 2016),
+    date: new Date(2016, 12-1, 1),
     comment: 'The easy way to deploy web app to AWS EC2. But it is such a pain to custimize server enviroment including the version of node...etc'
 },
 {
     title: 'Docker/Container',
-    date: new Date(12, 2016),
+    date: new Date(2016, 12-1, 1),
     comment: 'After the pain of AWS Elastic Beantalk. I started pick up Docker.The concept of running apps on VM on server is new and totally amazingly useful. I haven\'t use Docker in production tho.',
     resources: [{
         title: 'The Complete Docker Course for DevOps and Developers',
@@ -255,12 +255,12 @@ const topics = [{
 },
 {
     title: 'Web scraper, Cheerio',
-    date: new Date(1, 2017),
+    date: new Date(2017, 1-1, 1),
     comment: 'I use Cheerio to scrape web content on assist.org for my startup\'s needing. It is a pleasure to write a certain bot to so what I need.'
 },
 {
     title: 'D3 Data Viz/SVG',
-    date: new Date(2, 2017),
+    date: new Date(2017, 2-1, 1),
     comment: 'I got inspired by amazing speacker on the event of WaffleJS February. And start to learn the D3 framework.',
     resources: [{
         title: 'Introduction to D3',
@@ -272,7 +272,7 @@ const topics = [{
 },
 {
     title: 'GraphQL',
-    date: new Date(3, 2017),
+    date: new Date(2017, 3-1, 1),
     comment: 'I got inspired by a YC Startup called scaphold in the event of NodeSF fabruary.',
     resources: [{
         title: 'GraphQL with React: The Complete Developers Guide',
@@ -284,7 +284,7 @@ const topics = [{
 },
 {
     title: 'Golang',
-    date: new Date(4, 2017),
+    date: new Date(2017, 4-1, 1),
     comment: 'I got inspired by Uber engineers in UberHack.',
     resources: [{
         title: 'The Complete Google Go  Programming Course For Beginners',
@@ -296,17 +296,17 @@ const topics = [{
 },
 {
     title: 'Bash',
-    date: new Date(5, 2017),
+    date: new Date(2017, 5-1, 1),
     comment: 'I got inspired by Uber engineers in UberHack. I plan to unviel the power of Bash on May.'
 },
 {
     title: 'AMP',
-    date: new Date(6, 2017),
+    date: new Date(2017, 6-1, 1),
     comment: 'I plan to unviel the power of AMP on June.'
 },
 {
     title: 'React AR',
-    date: new Date(7, 2017),
+    date: new Date(2017, 7-1, 1),
     comment: 'I plan to unviel the power of React AR on July.'
 }
 ]
