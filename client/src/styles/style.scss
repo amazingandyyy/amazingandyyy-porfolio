@@ -11,7 +11,13 @@ body {
     box-sizing: border-box;
     font-family: $sans;
 }
-
+.app {
+    padding: 70px 15px 30px 30px;
+    @media(max-width: 700px){
+        padding: 70px 10px 30px 20px;
+    }
+}
 @import './home';
 @import './header';
 @import './component';
+@import './tune';

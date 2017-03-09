@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Gist from 'react-gist';
 import moment from 'moment';
 import { topics } from './data';
 
@@ -16,17 +15,17 @@ export default class Topics extends Component {
     })
   }
   recommendTopics(){
-    var mailTo = window.open('mailto:amazingandyyy@gmail.com?subject=Recommend%20Topics%20To%20Amazingandyyy&body=Hi,%20Andy');
+    var mailTo = window.open('mailto:amazingandyyy@gmail.com?subject=Recommend%20Topics/Resources/APIs%20To%20Amazingandyyy&body=Hi,%20Andy');
     setTimeout(()=>{
       mailTo.close()
-    }, 5);
+    }, 100);
   }
-  renderFilter(){
-    return (<div className="filter">
-        <b>{this.state.topics.length} technical topics</b> that I learned/will learn:
+  renderLead(){
+    return (<div className="lead">
+        <b>{this.state.topics.length} technical topics</b><span className="learn">learned</span><span className="willLearn">will be learned</span>
         <div>
           <span className="smallBtn" onClick={this.changeOrder.bind(this)}>Reverse order</span>
-          <span className="smallBtn" onClick={this.recommendTopics.bind(this)}>Recommend Topics/APIs</span>
+          <span className="smallBtn" onClick={this.recommendTopics.bind(this)}>Recommend Topics/Resources/APIs</span>
         </div>
     </div>)
   }
@@ -72,7 +71,7 @@ export default class Topics extends Component {
   render() {
     return (
       <div className="component topic">
-        {this.renderFilter()}
+        {this.renderLead()}
         {this.renderTopics()}
       </div>
     );

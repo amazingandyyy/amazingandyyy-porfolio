@@ -863,6 +863,13 @@ babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtim
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
+babel-runtime@^6.22.0:
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.10.0"
+
 babel-template@^6.14.0, babel-template@^6.15.0, babel-template@^6.16.0, babel-template@^6.8.0, babel-template@^6.9.0:
   version "6.16.0"
   resolved "https://registry.yarnpkg.com/babel-template/-/babel-template-6.16.0.tgz#e149dd1a9f03a35f817ddbc4d0481988e7ebc8ca"
@@ -3474,6 +3481,10 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+
 loader-runner@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.3.0.tgz#f482aea82d543e07921700d5a46ef26fdac6b8a2"
@@ -3554,6 +3565,10 @@ lodash.isarguments@^3.0.0:
 lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+
+lodash.isequal@^4.4.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
 lodash.isplainobject@~4.0.4:
   version "4.0.6"
@@ -4835,6 +4850,13 @@ react-widgets:
     deconstruct-number-format "0.0.1"
     format-number-with-string "0.0.2"
 
+react-youtube:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-7.3.0.tgz#eb1228866f48124ceb7f9825e7d4b562294584ef"
+  dependencies:
+    lodash.isequal "^4.4.0"
+    youtube-player "^4.0.1"
+
 react@^0.11.0:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/react/-/react-0.11.2.tgz#eaeb787e9b1e266a3540c07c06f4ea80fe1e3766"
@@ -5298,6 +5320,10 @@ shelljs@^0.7.5:
 signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+sister@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sister/-/sister-3.0.0.tgz#88eb57047cb283da1e070b1a7cae8212f3bcb2db"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -6123,4 +6149,13 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+youtube-player@^4.0.1:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/youtube-player/-/youtube-player-4.2.2.tgz#131e8d2627feaedd05527468c37ecbb8d89adb6f"
+  dependencies:
+    babel-runtime "^6.22.0"
+    load-script "^1.0.0"
+    lodash "^4.3.0"
+    sister "^3.0.0"
 

@@ -133,7 +133,14 @@ const topics = [{
 {
     title: 'MongoDB',
     date: new Date(2016, 5-1, 1),
-    comment: 'MongoDB is a noSQL database, you can use it like a JSON files. Mongoose API make MongoDB easier to query and manipulate. MongoDB is super easy to scale up and easy to set up. It is easy to connect to any Node backend or available in almost any cloud computing platforms.'
+    comment: 'MongoDB is a noSQL database, you can use it like a JSON files. Mongoose API make MongoDB easier to query and manipulate. MongoDB is super easy to scale up and easy to set up. It is easy to connect to any Node backend or available in almost any cloud computing platforms.',
+    resources: [{
+        title: 'The Complete Developers Guide to MongoDB',
+        resource: 'Udemy',
+        instructor: 'Stephen Grider',
+        url: 'https://www.udemy.com/the-complete-developers-guide-to-mongodb/learn/v4/',
+        comment: 'I took this course actually long time after I am confortable with mongodb, this tutorial teaches many advances topics of mongo such as TDD and geometry querying. It will be a good resource for both beginner and advance users.'
+    }]
 },
 {
     title: 'Angular 1.5',
@@ -143,7 +150,15 @@ const topics = [{
 {
     title: 'AWS S3',
     date: new Date(2016, 6-1, 1),
-    comment: 'S3 is developers\'s dropbox. It\'s API is extremely easy to use and super stable to make any content accessible to anywhere on the worldwide internet.'
+    comment: 'S3 is developers\'s dropbox. It\'s API is extremely easy to use and super stable to make any content accessible to anywhere on the worldwide internet.',
+    resources: [{
+        title: 'AWS S3 API (NodeJS snippet)',
+        resource: 'Gist',
+        instructor: 'Andy Chen',
+        url: 'https://gist.github.com/amazingandyyy/37386757efbf90098d0de08e7097f482',
+        comment: 'I plan to publish a sample minimun code snippets for AWS S3 API on my gist(need to be updated).'
+    }
+    ]
 },
 {
     title: 'Microsoft Cognitive API',
@@ -158,12 +173,28 @@ const topics = [{
 {
     title: 'Stripe API',
     date: new Date(2016, 7-1, 1),
-    comment: 'The best payment API and provide developer a extremely good sandbox. It\'s my first experience of OAuth API.'
+    comment: 'The best payment API and provide developer a extremely good sandbox. It\'s my first experience of OAuth API.',
+    resources: [{
+        title: 'Stripe payment API (NodeJS snippet)',
+        resource: 'Gist',
+        instructor: 'Andy Chen',
+        url: 'https://gist.github.com/amazingandyyy/c3afd6176c3962904d72d37e69671146',
+        comment: 'I publish a sample minimun code snippets for Stripe API on my gist.'
+    }
+    ]
 },
 {
     title: 'Twilio SMS',
     date: new Date(2016, 7-1, 1),
-    comment: 'Twilio\'s annul CONNECT confereince is my first attending to such giant event. Twilio SMS API is one of the most easy and powerful API that give me power to interact with the outside real world.'
+    comment: 'Twilio\'s annul CONNECT confereince is my first attending to such giant event. Twilio SMS API is one of the most easy and powerful API that give me power to interact with the outside real world.',
+    resources: [{
+        title: 'Twilio SMS API (NodeJS snippet)',
+        resource: 'Gist',
+        instructor: 'Andy Chen',
+        url: 'https://gist.github.com/amazingandyyy/6e67cb8a07bea72a47da0fd2c1319a0a',
+        comment: 'I publish a sample minimun code snippets for Twilio API on my gist.'
+    }
+    ]
 },
 {
     title: 'Angular 2 RC',
@@ -175,6 +206,19 @@ const topics = [{
         instructor: 'Maximilian Schwarzmüller',
         url: 'https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/overview',
         comment: 'After understand angular 1.5, I know more about how to pick up an frontend framework and pick up angular 2 in just a weekend and start to use it in production.'
+    }
+    ]
+},
+{
+    title: 'AWS SES API',
+    date: new Date(2016, 7-1, 1),
+    comment: 'AWS simple email service is way more better and easier to use than any other email APIs such as sendgrid, it\'s really flexable to send out either just text or a whole HTML snippets withou any extra setting.',
+    resources: [{
+        title: 'AWS SES(simple email service) API (NodeJS snippet)',
+        resource: 'Gist',
+        instructor: 'Andy Chen',
+        url: 'https://gist.github.com/amazingandyyy/31c35e9d0803a2adfab5f78c3bf64a41',
+        comment: 'I publish a sample minimun code snippets for AWS SES API on my gist.'
     }
     ]
 },
@@ -191,7 +235,15 @@ const topics = [{
 {
     title: 'Facebook Bot',
     date: new Date(2016, 11-1, 1),
-    comment: 'I built my first messanger Bot.'
+    comment: 'I built my first messanger Bot.',
+    resources: [{
+        title: 'Stripe payment API (NodeJS snippet)',
+        resource: 'Facebook',
+        instructor: 'Official Documentation',
+        url: 'https://developers.facebook.com/docs/messenger-platform/webhook-reference',
+        comment: 'I learned from zero to product via reading through the official documants and build my first event-brite bot in a one-day Hackathon. I really enjoyed in building a bot that can interative with users. NLP for sure should be next topic to dive into with. I heard api.ai/IBM bluemix apis are good api to start with.'
+    }
+    ]
 },
 {
     title: 'React Native',
@@ -272,7 +324,7 @@ const topics = [{
 },
 {
     title: 'GraphQL',
-    date: new Date(2017, 3-1, 1),
+    date: new Date(2017, 4-1, 1),
     comment: 'I got inspired by a YC Startup called scaphold in the event of NodeSF fabruary.',
     resources: [{
         title: 'GraphQL with React: The Complete Developers Guide',

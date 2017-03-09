@@ -48,11 +48,11 @@
                 right: 10px;
             }
             
-            &:hover{
+            &:hover, &:active{
                 transition: .2s all ease-in-out;
                 background:rgba($primary, 0.1);
+                box-shadow: -5px 0px 0px -0.01px $primary;
                 // transform: translate(40px, 0px) scale(1.1);
-                box-shadow: -6px 0px 0px -1px $primary;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 .note{
@@ -73,7 +73,7 @@
                         color: rgba(0,0,0,0.5);
                     }
                     background:rgba(0,0,0,0.03);
-                    box-shadow: -6px 0px 0px -1px rgba(0,0,0,0.5);
+                    box-shadow: -5px 0px 0px -0.01px rgba(0,0,0,0.5);
                 }
                 .exactData {
                     display: inline-block;
@@ -99,7 +99,6 @@
                 margin-top: 5px;
                 padding: 10px 15px;
                 box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
-                border-radius: 0.3rem;
                 background: white;
                 color: rgba(0,0,0,0.5);
                 text-decoration: none;
@@ -120,10 +119,28 @@
             }
         }
     }
-    .filter{
+    .lead{
         text-transform: capitalize;
         user-select: none;
         margin-bottom: 10px;
+        .learn{
+            font-size: 0.7rem;
+            background:rgba($primary, 0.1);
+            box-shadow: -5px 0px 0px 0px $primary;
+            margin: 0px 5px 0px 15px;
+            padding: 0px 5px;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .willLearn{
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            background:rgba(0,0,0,0.03);
+            box-shadow: -5px 0px 0px 0px rgba(0,0,0,0.5);
+            margin: 0px 5px 0px 10px;
+            padding: 0px 5px;
+            display: inline-block;
+        }
         .smallBtn{
             font-size: 0.6rem;
             cursor: pointer;
@@ -134,12 +151,13 @@
             display: inline-block;
             padding: 4px 13px;
             border-radius: 0.2rem;
-            margin-top: -2px;
+            display: inline-block;
+            margin-top: 5px;
             &+.smallBtn{
                 margin-left: 10px;
             }
             &:hover{
-                box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+                box-shadow: inset 0px 0px 0px 1.5px rgba(0,0,0,0.3);
                 opacity: 0.8;
             }
 
