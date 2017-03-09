@@ -11,27 +11,70 @@
         background:white;
         
         &>.topic{
-            padding: 5px 0px 10px 10px;
+            position: relative;
+            padding: 5px 10px 10px 10px;
             box-shadow: -5px 0px 0px rgba(0,0,0,0.1);
             transition: .2s all ease-in-out;
 
-            &>.date{
+            .date{
                 opacity: 0.7;
                 font-size: 0.8rem;
             }
-            .date.exactData {
+            .exactData {
+                font-size: 0.8rem;
                 padding-left: 5px;
                 display: none;
                 font-style: italic;
             }
+            &.future:hover{
+                .light {
+                    background: rgba(0,0,0,0.5);
+                }
+            }
+            .light{
+                display: none;
+                opacity: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 10px;
+                transition: .3s all ease-in-out;
+                transition-delay: .3s;
+                margin-left: 5px;
+            }
+            .note{
+                display: none;
+                position: absolute;
+                top: 3px;
+                right: 10px;
+            }
+            
             &:hover{
                 transition: .2s all ease-in-out;
-                background:rgba(white, 0.8);
+                background:rgba($primary, 0.1);
                 // transform: translate(40px, 0px) scale(1.1);
-                box-shadow: -5px 0px 0px -1px $primary;
+                box-shadow: -6px 0px 0px -1px $primary;
                 padding-top: 20px;
                 padding-bottom: 20px;
+                .note{
+                    display: block;
+                }
+                .date{
+                    color: darken($primary, 5%);
+                }
+                .light {
+                    background: $primary;
+                    display: inline-block;
+                    opacity: 1;
+                    transition: .3s all ease-in-out;
+                }
 
+                &.future{
+                    .date{
+                        color: rgba(0,0,0,0.5);
+                    }
+                    background:rgba(0,0,0,0.03);
+                    box-shadow: -6px 0px 0px -1px rgba(0,0,0,0.5);
+                }
                 .exactData {
                     display: inline-block;
                 }
@@ -45,27 +88,43 @@
                 padding-left: 5px;
             }
 
-            .resource{
-                padding: 5px 8px;
+            .resourceTitle{
+                margin-top: 5px;
+                font-size: 0.8rem;
+                opacity: 0.8;
+            }
+
+            a.resource{
+                display: block;
+                margin-top: 5px;
+                padding: 10px 15px;
                 box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
                 border-radius: 0.3rem;
-                margin: 5px 0px;
-                color: rgba(0,0,0,0.6);
-                a {
-                    color: rgba(0,0,0,0.8);
-                    &:hover{
-                        text-decoration: underline;
-                    }
+                background: white;
+                color: rgba(0,0,0,0.5);
+                text-decoration: none;
+                &+.resource{
+                    margin-top: 8px;
                 }
+                .title{
+                    color: rgba(0,0,0,0.7);
+                }
+                .instructorResource{
+                    font-size: 0.9rem;
+                }
+
                 &:hover{
-                    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+                    text-decoration: none;
+                    box-shadow: inset 0px 0px 0px 0.8px rgba(0,0,0,0.3);
                 }
             }
         }
     }
     .filter{
-        margin-left: 10px;
-        .orderBtn{
+        text-transform: capitalize;
+        user-select: none;
+        margin-bottom: 10px;
+        .smallBtn{
             font-size: 0.6rem;
             cursor: pointer;
             text-transform: uppercase;
@@ -75,7 +134,10 @@
             display: inline-block;
             padding: 4px 13px;
             border-radius: 0.2rem;
-
+            margin-top: -2px;
+            &+.smallBtn{
+                margin-left: 10px;
+            }
             &:hover{
                 box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
                 opacity: 0.8;

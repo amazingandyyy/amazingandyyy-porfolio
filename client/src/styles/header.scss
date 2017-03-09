@@ -10,6 +10,7 @@
     flex-direction: row;
     height: 50px;
     z-index: 99;
+    user-select: none;
 
     &.fixed {
         position: fixed;

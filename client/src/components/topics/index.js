@@ -15,23 +15,44 @@ export default class Topics extends Component {
       topics: topics.reverse()
     })
   }
+  recommendTopics(){
+    var mailTo = window.open('mailto:amazingandyyy@gmail.com?subject=Recommend%20Topics%20To%20Amazingandyyy&body=Hi,%20Andy');
+    setTimeout(()=>{
+      mailTo.close()
+    }, 5);
+  }
   renderFilter(){
-    return (<span className="filter">
-      <div className="orderBtn" onClick={this.changeOrder.bind(this)}> 
-        Reverse
-       </div>
-    </span>)
+    return (<div className="filter">
+        <b>{this.state.topics.length} technical topics</b> that I learned/will learn:
+        <div>
+          <span className="smallBtn" onClick={this.changeOrder.bind(this)}>Reverse order</span>
+          <span className="smallBtn" onClick={this.recommendTopics.bind(this)}>Recommend Topics/APIs</span>
+        </div>
+    </div>)
+  }
+  isFuture(date){
+    const currentDate = new Date();
+    if(date - currentDate > 0){
+      return true
+    }else{
+      return false
+    }
+
   }
   renderTopics(){
     if(this.state.topics){
       return (this.state.topics).map((topic, index) => {
-        return (<div className="topic" key={index}>
-          <div className="date">
-            {moment(topic.date).fromNow()}
-          <span className="date exactData"><i className="fa fa-calendar-check-o"></i> {moment(topic.date).format('MMMM, YYYY')} more exactly</span>
+        return (<div className={this.isFuture(topic.date)?'topic future':'topic'} key={index}>
+          <div className="note">
+            <span className="date">
+            {this.isFuture(topic.date)?'I plan to learn ':'I learned it '}{moment(topic.date).fromNow()}
+            <span className="exactData"><i className="fa fa-calendar-check-o"></i> {moment(topic.date).format('MMMM, YYYY')} more specific</span>
+            </span>
+            <span className="light"></span>
           </div>
           <div className="title">{topic.title}</div>
           <div className="comment">{topic.comment}</div>
+          {topic.resources && <div className="resourceTitle">Resources I highly recommended:</div>}
           {topic.resources && this.renderResources(topic.resources)}
         </div>)
       })
@@ -40,18 +61,17 @@ export default class Topics extends Component {
   renderResources(resources){
     if(resources){
       return resources.map((resource, index) => {
-        return (<div className="resource" key={index}>
-          <div className="title"><a href={resource.url} target="_blank">{resource.title}</a></div>
-          <div className="instructorResource">{resource.instructor}, {resource.resource}</div>
-          <div className="comment">{resource.comment}</div>
-          </div>)
+        return (<a href={resource.url} target="_blank" className="resource" key={index}>
+            <div className="title">{resource.title}</div>
+            <div className="instructorResource">{resource.instructor}, {resource.resource}</div>
+            <div className="comment">{resource.comment}</div>
+          </a>)
       })
     }
   }
   render() {
     return (
       <div className="component topic">
-      These are technics topics that I learned/will learn:
         {this.renderFilter()}
         {this.renderTopics()}
       </div>
