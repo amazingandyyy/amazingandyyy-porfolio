@@ -7,6 +7,7 @@ import Topics from '../components/topics';
 import Projects from '../components/projects';
 import Hackathons from '../components/hackathons';
 import Experiences from '../components/experiences';
+import Survey from '../components/survey'
 
 const HomeRoute = {
     path: '/',
@@ -23,6 +24,10 @@ const HomeRoute = {
     {
         path: '/hackathons',
         component: Hackathons
+    },
+    {
+        path: '/survey',
+        component: Survey
     },
     {
         path: '/experiences',
