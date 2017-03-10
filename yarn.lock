@@ -4742,6 +4742,12 @@ react-motion@^0.4.2:
     performance-now "^0.2.0"
     raf "^3.1.0"
 
+react-particles-js:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-1.4.0.tgz#d516d2ed03fac389ea2c10302dfa680f10d27284"
+  dependencies:
+    react "^15.4.1"
+
 react-redux@^4.4.6:
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-4.4.6.tgz#4b9d32985307a11096a2dd61561980044fcc6209"

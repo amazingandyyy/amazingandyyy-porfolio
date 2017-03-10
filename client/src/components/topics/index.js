@@ -32,17 +32,15 @@ export default class Topics extends Component {
   isFuture(date){
     const currentDate = new Date();
     if(date - currentDate > 0){
-      return true
-    }else{
-      return false
+      return true;
     }
-
+    return false;
   }
   renderTopics(){
     if(this.state.topics){
       return (this.state.topics).map((topic, index) => {
         return (<div className={this.isFuture(topic.date)?'topic future':'topic'} key={index}>
-          <div className="note">
+          <div className="date-tag">
             <span className="date">
             {this.isFuture(topic.date)?'I plan to learn ':'I learned it '}{moment(topic.date).fromNow()}
             <span className="exactData"><i className="fa fa-calendar-check-o"></i> {moment(topic.date).format('MMMM, YYYY')} more specific</span>
@@ -56,7 +54,7 @@ export default class Topics extends Component {
         </div>)
       })
     }
-  }
+  } 
   renderResources(resources){
     if(resources){
       return resources.map((resource, index) => {
@@ -70,7 +68,7 @@ export default class Topics extends Component {
   }
   render() {
     return (
-      <div className="component topic">
+      <div className="component">
         {this.renderLead()}
         {this.renderTopics()}
       </div>

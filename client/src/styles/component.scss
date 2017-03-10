@@ -1,124 +1,123 @@
-.component {
+.component{
+    max-width: 800px;
+    background:white;
+    
     &>.title{
         text-transform: uppercase;
         letter-spacing: 0.5px;
         font-size: 1.6rem;
         font-weight: 900;
     }
-
-    &.topic {
-        max-width: 800px;
-        background:white;
         
-        &>.topic{
-            position: relative;
-            padding: 5px 10px 10px 10px;
-            box-shadow: -5px 0px 0px rgba(0,0,0,0.1);
-            transition: .2s all ease-in-out;
+    .topic{
+        position: relative;
+        padding: 5px 10px 10px 10px;
+        box-shadow: -5px 0px 0px rgba(0,0,0,0.1);
+        transition: .2s all ease-in-out;
 
+        .date{
+            opacity: 0.7;
+            font-size: 0.8rem;
+        }
+        .exactData{
+            font-size: 0.8rem;
+            padding-left: 5px;
+            display: none;
+            font-style: italic;
+        }
+        &.future:hover{
+            .light {
+                background: rgba(0,0,0,0.5);
+            }
+        }
+        .light{
+            display: none;
+            opacity: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 10px;
+            transition: .3s all ease-in-out;
+            transition-delay: .3s;
+            margin-left: 5px;
+        }
+        .date-tag{
+            display: none;
+            position: absolute;
+            top: 3px;
+            right: 10px;
+        }
+        
+        &:hover, &:active{
+            transition: .2s all ease-in-out;
+            background:rgba($primary, 0.1);
+            box-shadow: -5px 0px 0px -0.01px $primary;
+            transform: translate(-5px, 0px) scale(1.01);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .date-tag{
+                display: block;
+            }
             .date{
-                opacity: 0.7;
-                font-size: 0.8rem;
+                color: darken($primary, 5%);
+            }
+            .light {
+                background: $primary;
+                display: inline-block;
+                opacity: 1;
+                transition: .3s all ease-in-out;
+            }
+
+            &.future{
+                .date{
+                    color: rgba(0,0,0,0.5);
+                }
+                background:rgba(0,0,0,0.03);
+                box-shadow: -5px 0px 0px -0.01px rgba(0,0,0,0.5);
             }
             .exactData {
-                font-size: 0.8rem;
-                padding-left: 5px;
-                display: none;
-                font-style: italic;
+                display: inline-block;
             }
-            &.future:hover{
-                .light {
-                    background: rgba(0,0,0,0.5);
-                }
-            }
-            .light{
-                display: none;
-                opacity: 0;
-                width: 8px;
-                height: 8px;
-                border-radius: 10px;
-                transition: .3s all ease-in-out;
-                transition-delay: .3s;
-                margin-left: 5px;
-            }
-            .note{
-                display: none;
-                position: absolute;
-                top: 3px;
-                right: 10px;
-            }
-            
-            &:hover, &:active{
-                transition: .2s all ease-in-out;
-                background:rgba($primary, 0.1);
-                box-shadow: -5px 0px 0px -0.01px $primary;
-                // transform: translate(40px, 0px) scale(1.1);
-                padding-top: 20px;
-                padding-bottom: 20px;
-                .note{
-                    display: block;
-                }
-                .date{
-                    color: darken($primary, 5%);
-                }
-                .light {
-                    background: $primary;
-                    display: inline-block;
-                    opacity: 1;
-                    transition: .3s all ease-in-out;
-                }
+        }
 
-                &.future{
-                    .date{
-                        color: rgba(0,0,0,0.5);
-                    }
-                    background:rgba(0,0,0,0.03);
-                    box-shadow: -5px 0px 0px -0.01px rgba(0,0,0,0.5);
-                }
-                .exactData {
-                    display: inline-block;
-                }
+        &>.title {
+            font-weight: 600;
+        }
+
+        .title+.comment {
+            padding-left: 5px;
+        }
+
+        .resourceTitle{
+            margin-top: 5px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        a.resource{
+            display: block;
+            margin-top: 5px;
+            padding: 10px 15px;
+            box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+            background: white;
+            color: rgba(0,0,0,0.5);
+            text-decoration: none;
+            &+.resource{
+                margin-top: 8px;
+            }
+            .title{
+                color: rgba(0,0,0,0.7);
+            }
+            .instructorResource{
+                font-size: 0.9rem;
             }
 
-            &>.title {
-                font-weight: 600;
-            }
-
-            .title+.comment {
-                padding-left: 5px;
-            }
-
-            .resourceTitle{
-                margin-top: 5px;
-                font-size: 0.8rem;
-                opacity: 0.8;
-            }
-
-            a.resource{
-                display: block;
-                margin-top: 5px;
-                padding: 10px 15px;
-                box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
-                background: white;
-                color: rgba(0,0,0,0.5);
+            &:hover{
                 text-decoration: none;
-                &+.resource{
-                    margin-top: 8px;
-                }
-                .title{
-                    color: rgba(0,0,0,0.7);
-                }
-                .instructorResource{
-                    font-size: 0.9rem;
-                }
-
-                &:hover{
-                    text-decoration: none;
-                    box-shadow: inset 0px 0px 0px 0.8px rgba(0,0,0,0.3);
-                }
+                box-shadow: inset 0px 0px 0px 0.8px rgba(0,0,0,0.3);
             }
         }
     }
+    
     .lead{
         text-transform: capitalize;
         user-select: none;
