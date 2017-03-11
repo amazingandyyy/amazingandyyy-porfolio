@@ -129,16 +129,25 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-start;
+                &:hover{
+                    .left{
+                        // background: $gold;
+                        // color: white;
+                        font-size: 1.6rem;
+                    }
+                }
 
                 .left{
                     height: 50px;
                     width: 50px;
+                    font-size: 1.5rem;
                     text-align: center;
                     line-height: 50px;
                     margin: 10px 10px 10px 0px;
                     border-radius: 0.275rem;
                     color: $gold;
-                    box-shadow: inset 0px 0px 0px 1px $gold;
+                    // border: 1px solid $gold;
+                    box-shadow: 0px 0px 0px 1.2px $gold;
                 }
                 &+.prize{
                     opacity: 0.85
@@ -155,44 +164,50 @@
         margin-left: -30px;
         height: 500px;
     }
-    .point{
+    .pin{
         position: relative;
-        background: $primary;
-        width: 10px;
-        height: 10px;
+        
+        .point{
+            border-radius: 20px;
+            background: $primary;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            &:hover{
+                background: lignten($primary, 30%);
+                opacity: 1;
+                transform: scale(1.5);
+                z-index: 99;
+            }
+        }
         .mapTag{
             display: none;
-            z-index: 90;
+            z-index: 99;
+            .time{
+                opacity: 0.8;
+                font-size: 0.4rem;
+                margin-bottom: 1px;
+            }
         }
         &:hover{
-            @media(min-width: 700px){
-                transform: scale(1.5);
-            }
             .mapTag {
-                transform: scale(1.5);
+                transform: scale(1.2);
                 display: inline-block;
                 position: absolute;
-                bottom: 30px;
-                left: 40px;
+                bottom: 20px;
+                left: 20px;
                 background: white;
                 height: 45px;
                 overflow-y: scroll;
                 overflow-x: hidden;
                 width: 150px;
                 padding: 5px;
-                font-size: 0.6rem;
+                font-size: 0.7rem;
                 border-radius: 0.1rem;
-                z-index: 99;
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-
-                // &:hover{
-                //     box-shadow: 0px 0px 0px 2px $primary;
-                //     z-index: 99;
-                //     opacity: 1;
-                //     background: $primary;
-                //     color: white;
-                // }
-
+                box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+            
                 .time{
                     font-size: 0.6rem;
                 }

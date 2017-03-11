@@ -5,7 +5,8 @@ import GoogleMap from 'google-map-react';
 import { hackathons } from './data';
 
 const HackathonElementOnMap = ({ content }) => (
-  <div className="point">
+  <div className="pin">
+      <div className="point"></div>
     <div className="mapTag">
       <div className="time">
         <i className="fa fa-map-pin"></i>{moment(content.startingDate).fromNow()}
@@ -58,7 +59,7 @@ export default class Hackathons extends Component {
   renderHackathons(){
     if(this.state.hackathons){
       return this.state.hackathons.map((hackathon, index)=> {
-        return (<div className="hackathon" key={index}>
+        return (<div className="hackathon" key={index} id={hackathon.title.split(' ').join('-')}>
           <div className="title">{hackathon.title}</div>
           <div className="info">
             {this.renderDate(hackathon.startingDate, hackathon.endingDate)}
