@@ -60,7 +60,7 @@ export default class Topics extends Component {
       return resources.map((resource, index) => {
         return (<a href={resource.url} target="_blank" className="resource" key={index}>
             <div className="title">{resource.title}</div>
-            <div className="instructorResource">{resource.instructor}, {resource.resource}</div>
+            <div className="instructorResource">by {resource.instructor}, {resource.resource}</div>
             <div className="comment">{resource.comment}</div>
           </a>)
       })
