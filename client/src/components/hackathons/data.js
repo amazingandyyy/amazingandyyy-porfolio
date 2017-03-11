@@ -366,8 +366,8 @@ const hackathons = [{
     location: 'Pier 17',
     city: 'San Francisco',
     coordinate: {
-        lat: 36.6674229,
-        lng: -123.1935534
+        lat: 37.8023172,
+        lng: -122.3999601
     },
     eventLink: 'https://www.eventbrite.com/e/food-hackathon-forum-kids-health-tickets-28266949206',
     startingDate: new Date(2016, 10-1, 29),

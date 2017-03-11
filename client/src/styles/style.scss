@@ -12,7 +12,7 @@ body {
     font-family: $sans;
 }
 .app {
-    padding: 70px 15px 30px 30px;
+    padding: 70px 15px 0px 30px;
     @media(max-width: 700px){
         padding: 70px 10px 30px 20px;
     }
