@@ -1,0 +1,14 @@
+.home{
+    .link-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .link{
+            margin: 10px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    }
+}

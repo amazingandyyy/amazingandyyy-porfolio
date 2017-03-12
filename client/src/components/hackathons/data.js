@@ -492,6 +492,34 @@ const hackathons = [{
         github: 'https://github.com/imrenagi/hackuber'
     },
     prizes: []
+},
+{
+    title: 'Reactathon',
+    location: 'github HQs',
+    city: 'San Francisco',
+    coordinate: {
+        lat: 37.7822713,
+        lng: -122.3934366
+    },
+    eventLink: 'https://www.eventbrite.com/e/reactjs-hackathon-github-tickets-31439578626',
+    startingDate: new Date(2017, 3-1, 11),
+    endingDate: new Date(2017, 3-1, 12),
+    hightlight: 'My first mentoring',
+    comment: '',
+    images: [],
+    project: {
+        title: 'Serve as One of the 7 React Mentors/Experts',
+        introduction: '',
+        technics: [
+        ],
+        deployUrl: '',
+        devpost: '',
+        github: ''
+    },
+    prizes: [{
+        title: 'React Mentors/Experts',
+        benefit: 'My first mentorship and new role in a Hackathon'
+    }]
 }]
 
 export { hackathons };

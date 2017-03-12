@@ -323,6 +323,24 @@ const topics = [{
     }]
 },
 {
+    title: 'Redux-Observable(RxJS)',
+    date: new Date(2017, 3-1, 1),
+    comment: 'I plan to unviel the power of Redux-RxJS on July.',
+    resources: [{
+        title: 'RxJS middleware for action side effects in Redux using "Epics"',
+        resource: 'github',
+        instructor: 'Official Documentation',
+        url: 'https://github.com/redux-observable/redux-observable',
+        comment: 'RxJS middleware for action side effects in Redux using "Epics"'
+    },{
+        title: 'Netflix JavaScript Talks - RxJS + Redux + React = Amazing!',
+        resource: 'youtbe',
+        instructor: 'Jay Phelps',
+        url: 'https://www.youtube.com/watch?v=AslncyG8whg',
+        comment: 'Netflix JavaScript Talks - RxJS + Redux + React = Amazing!'
+    }]
+},
+{
     title: 'GraphQL',
     date: new Date(2017, 4-1, 1),
     comment: 'I got inspired by a YC Startup called scaphold in the event of NodeSF fabruary.',
@@ -333,6 +351,11 @@ const topics = [{
         url: 'https://www.udemy.com/graphql-with-react-course/',
         comment: 'I plan to unviel the power of GraphQL on March.'
     }]
+},
+{
+    title: 'Apollo server',
+    date: new Date(2017, 4-1, 1),
+    comment: 'I got inspired in Reactathon.'
 },
 {
     title: 'Golang',
