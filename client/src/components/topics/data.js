@@ -341,6 +341,37 @@ const topics = [{
     }]
 },
 {
+    title: 'Golang',
+    date: new Date(2017, 3-1, 1),
+    comment: 'I got inspired by Uber engineers in UberHack.',
+    resources: [{
+        title: 'The Complete Google Go  Programming Course For Beginners',
+        resource: 'Udemy',
+        instructor: 'Mr. David Valentine',
+        url: 'https://www.udemy.com/googlego/learn/v4/overview',
+        comment: 'I plan to unviel the power of Golang on April.'
+    },{
+        title: 'An Introduction to Programming in Go',
+        resource: 'golang-book',
+        instructor: 'Caleb Doxsey',
+        url: 'http://www.golang-book.com/',
+        comment: 'Only the first two chapter is completed, but chapter two is extremely useful.'
+    },
+    {
+        title: 'Go Web Programming Bootcamp',
+        resource: 'golang-book',
+        instructor: 'Caleb Doxsey',
+        url: 'http://www.golang-book.com/guides/bootcamp',
+        comment: 'I plan to finish this next week.'
+    },{
+        title: 'Writing Web Applications',
+        resource: 'Golang',
+        instructor: 'Official Documentation',
+        url: 'https://golang.org/doc/articles/wiki/',
+        comment: 'I plan to finish this next week.'
+    }]
+},
+{
     title: 'GraphQL',
     date: new Date(2017, 4-1, 1),
     comment: 'I got inspired by a YC Startup called scaphold in the event of NodeSF fabruary.',
@@ -356,18 +387,6 @@ const topics = [{
     title: 'Apollo server',
     date: new Date(2017, 4-1, 1),
     comment: 'I got inspired in Reactathon.'
-},
-{
-    title: 'Golang',
-    date: new Date(2017, 4-1, 1),
-    comment: 'I got inspired by Uber engineers in UberHack.',
-    resources: [{
-        title: 'The Complete Google Go  Programming Course For Beginners',
-        resource: 'Udemy',
-        instructor: 'Mr. David Valentine',
-        url: 'https://www.udemy.com/googlego/learn/v4/overview',
-        comment: 'I plan to unviel the power of Golang on April.'
-    }]
 },
 {
     title: 'Bash',
