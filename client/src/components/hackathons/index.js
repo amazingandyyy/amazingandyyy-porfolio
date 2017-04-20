@@ -88,7 +88,8 @@ export default class Hackathons extends Component {
     return prizes.map((prize, index)=>{
       return (<div className="prize" key={index}>
         <div className="left">
-          <i className="fa fa-trophy" aria-hidden="true"></i>
+          {prize.mentor && <i className="fa fa-podcast" aria-hidden="true"></i>}
+          {!prize.mentor && <i className="fa fa-trophy" aria-hidden="true"></i>}
         </div>
         <div className="right">
           <div className="title">{prize.title}</div>

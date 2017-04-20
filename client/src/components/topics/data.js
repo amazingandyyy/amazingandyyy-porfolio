@@ -372,8 +372,70 @@ const topics = [{
     }]
 },
 {
+    title: 'Ant Desgin',
+    date: new Date(2017, 4-1, 18),
+    comment: 'Ant Design is my Boostrap of React development',
+    resources: [{
+        title: 'Documantation',
+        resource: 'Official Documantation',
+        instructor: 'Ant Finance',
+        url: 'https://ant.design/',
+        comment: 'I really love the Data entry and Data display secstions and using this powerful and friendly front-end library totally save my life.'
+    }]
+},
+{
+    title: 'Big Data with Python Spark',
+    date: new Date(2017, 3-1, 20),
+    comment: 'I decided to start to move on to the science part of computer science.',
+    resources: [{
+        title: 'Taming Big Data with Apache Spark and Python - Hands On!',
+        resource: 'Udemy',
+        instructor: 'Frank Kane',
+        url: 'https://www.udemy.com/taming-big-data-with-apache-spark-hands-on/learn/v4/overview',
+        comment: 'So far so good, but I think spark already do the hard part for me, so it is a little too boring to use.'
+    }]
+},
+{
+    title: 'ReactVR',
+    date: new Date(2017, 4-1, 18),
+    comment: 'I am so excited about this project.',
+    resources: [{
+        title: 'Documantation',
+        resource: 'Official Documantation',
+        instructor: 'Facebook',
+        url: 'https://facebook.github.io/react-vr/',
+        comment: 'I build the hello world project in 5 seconds and build a VRPlayer in two hours. You can check the project here: https://github.com/amazingandyyy/VRPlayer'
+    },
+    {
+        title: 'My VRPlayer Project',
+        resource: 'GitHub Repo',
+        instructor: 'Amazingandyyy',
+        url: 'https://github.com/amazingandyyy/VRPlayer',
+        comment: 'A player build with ReactVR. You can change the size of the screem.'
+    }]
+},
+{
+    title: 'Machine Learning with Tenserflow',
+    date: new Date(2017, 6-1, 20),
+    comment: 'I decided to start to move on to the science part of computer science.',
+    resources: [{
+        title: 'Machine Learning A-Z™: Hands-On Python & R In Data Science',
+        resource: 'Udemy',
+        instructor: 'Kirill Eremenko & Hadelin de Ponteves',
+        url: 'https://www.udemy.com/machinelearning/learn/v4/',
+        comment: 'Hope to do this ASAP.'
+    },
+    {
+        title: 'Deep Learning A-Z™: Hands-On Artificial Neural Networks',
+        resource: 'Udemy',
+        instructor: 'Kirill Eremenko & Hadelin de Ponteves',
+        url: 'https://www.udemy.com/deeplearning/learn/v4/overview',
+        comment: 'Hope to do this ASAP.'
+    }]
+},
+{
     title: 'GraphQL',
-    date: new Date(2017, 4-1, 1),
+    date: new Date(2017, 6-1, 1),
     comment: 'I got inspired by a YC Startup called scaphold in the event of NodeSF fabruary.',
     resources: [{
         title: 'GraphQL with React: The Complete Developers Guide',
@@ -384,24 +446,19 @@ const topics = [{
     }]
 },
 {
-    title: 'Apollo server',
-    date: new Date(2017, 4-1, 1),
-    comment: 'I got inspired in Reactathon.'
-},
-{
-    title: 'Bash',
-    date: new Date(2017, 5-1, 1),
-    comment: 'I got inspired by Uber engineers in UberHack. I plan to unviel the power of Bash on May.'
-},
-{
     title: 'AMP',
     date: new Date(2017, 6-1, 1),
     comment: 'I plan to unviel the power of AMP on June.'
 },
 {
-    title: 'React AR',
+    title: 'Apollo server',
     date: new Date(2017, 7-1, 1),
-    comment: 'I plan to unviel the power of React AR on July.'
+    comment: 'I got inspired in Reactathon.'
+},
+{
+    title: 'Bash',
+    date: new Date(2017, 8-1, 1),
+    comment: 'I got inspired by Uber engineers in UberHack. I plan to unviel the power of Bash on May.'
 }
 ]
 

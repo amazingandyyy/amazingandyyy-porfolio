@@ -508,7 +508,7 @@ const hackathons = [{
     comment: '',
     images: [],
     project: {
-        title: 'Serve as One of the 7 React Mentors/Experts',
+        title: 'Serve as One of the 7 React Mentors',
         introduction: '',
         technics: [
         ],
@@ -517,9 +517,69 @@ const hackathons = [{
         github: ''
     },
     prizes: [{
+        mentor: true,
         title: 'React Mentors/Experts',
         benefit: 'My first mentorship and new role in a Hackathon'
     }]
-}]
+},
+{
+    title: 'BASEHack',
+    location: 'School 42',
+    city: 'Fremont',
+    coordinate: {
+        lat: 37.5486310,
+        lng: -122.0613047
+    },
+    eventLink: '',
+    startingDate: new Date(2017, 4-1, 8),
+    endingDate: new Date(2017, 4-1, 9),
+    hightlight: 'My first mentoring',
+    comment: '',
+    images: [],
+    project: {
+        title: 'Serve as Hackathon Mentor',
+        introduction: '',
+        technics: [
+        ],
+        deployUrl: '',
+        devpost: '',
+        github: ''
+    },
+    prizes: [{
+        mentor: true,
+        title: 'Mentor',
+        benefit: 'My second mentorship in a Hackathon'
+    }]
+},
+{
+    title: 'TinoHack',
+    location: 'School 42',
+    city: 'Fremont',
+    coordinate: {
+        lat: 37.5486305,
+        lng: -122.0613047
+    },
+    eventLink: '',
+    startingDate: new Date(2017, 4-1, 15),
+    endingDate: new Date(2017, 4-1, 16),
+    hightlight: 'My first mentoring',
+    comment: '',
+    images: [],
+    project: {
+        title: 'Serve as Hackathon Mentor',
+        introduction: '',
+        technics: [
+        ],
+        deployUrl: '',
+        devpost: '',
+        github: ''
+    },
+    prizes: [{
+        mentor: true,
+        title: 'Mentor',
+        benefit: 'My third mentorship in a Hackathon'
+    }]
+}
+]
 
 export { hackathons };
