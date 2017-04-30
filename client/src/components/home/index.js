@@ -20,9 +20,23 @@ export default class Home extends Component {
             <hr />
     </div>)
   }
-  renderStats(){
+  renderEvents(){
     return (<div>
-      Stats
+    Or find me in the following events:
+      <ul>
+      <li>April 27: Make School Demo day & Hiring Mixer, Free @SF</li>
+      <li>April 27: Berkeley LAUNCH Demo Day, $35 for students @Cal</li>
+      <li>April 29, CA Cognitive Science Conference, @Berkeley</li>
+      <li>May 3 TBA WaffleJS, May 4 NodeSF @SF</li>
+      <li>May 3 TaiwanRocksSF @SF</li>
+      <li>May 17, The Startup Conference @Redwood</li>
+      <li>May 19-20, Maker Space @San Mateo</li>
+      <li>May 23: Global AI Hackathon - San Francisco @SF</li>
+      <li>May 24, 25: May Twilio Signal, 50% off of @SF</li>
+      <li>May 27: NodeSchool Oakland @Oakland</li>
+      <li>...</li>
+      </ul>
+      Email me if you will go either, let’s meet there or go together.
     </div>)
   }
   renderLinks(){
@@ -46,6 +60,7 @@ export default class Home extends Component {
       <div className="component home">
         {this.renderIntroduction()}
         {this.renderLinks()}
+        {this.renderEvents()}
       </div>
     );
   }
