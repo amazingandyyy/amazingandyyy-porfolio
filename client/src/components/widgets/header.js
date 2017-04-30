@@ -6,9 +6,9 @@ class Header extends Component {
         return (
                 <div className="header fixed">
                     <div className="logo">
-                        <a href="">
+                        <Link to="/">
                             <img src="https://s3.amazonaws.com/amazingandyyy/logo.png" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="menu">
                         <Link className="item" activeClassName="active" to='/topics'>Topics</Link>
