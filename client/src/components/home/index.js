@@ -4,33 +4,30 @@ import { Links } from './data';
 export default class Home extends Component {
   renderIntroduction(){
     return (<div>
-      <h1>amazingandyyy</h1>
-      <div className='centerTitle'>
-        <h3>Andy Chen</h3>
-      </div>
-      <p>Joined Draper University, fall 2018</p>
-      <p>CTO of <b>BSOS</b>, summer 2018</p>
-      <p>Founded <b>BNS</b>, summer 2018</p>
-      <p className='move'>Berkeley ✈ Daly City, summer 2018</p>
-      <p className='side'>Built Leptin, side project, spring 2017</p>
-      <p className='side'>Built Revieweer, side project, spring 2018</p>
-      <p className='side'>Build Shepherd, side project, winter 2017</p>
-      <p>served as CTO at <b>Ventured Network</b>, summer 2017</p>
-      <p>bought my first Bitcoin at $1254/each, spring 2017</p>
-      <p>bought my first Ethereum at $42/each, spring 2017</p>
+      <p>Joined <b>Draper University</b>, 09 2018</p>
+      <p>Served As CTO of <b>BSOS</b>, 08 2018</p>
+      <p>Founded <b>BNS</b>, 07 2018</p>
+      <p className='move'>Berkeley ✈ Daly City, 2018</p>
+      <p>Graduated from <b>UC Berkeley</b>, 05 2018</p>
+      <p className='side'>Built <b>Revieweer</b>, side project, 02 2018</p>
+      <p className='side'>Built <b>Leptin</b>, side project, 12 2017</p>
+      <p className='side'>Build <b>Shepherd</b>, side project, 10 2017</p>
+      <p>served as CTO at <b>Ventured Network</b>, 07 2017</p>
+      <p>bought my first <b>Ethereum</b> and <b>Bitcoin</b>, 04 2017</p>
+      <p><b>Cognitive Science</b> at <b>UC Berkeley</b>, 05 2018</p>
       <p className='move'>Fremont ✈ Berkeley, 2016</p>
-      <p>served as CTO of <b>YeahEdu</b>, healthy, 2015</p>
-      <p className='side'>Built Seperpay, side project, 2016</p>
-      <p>Studied web dev in Coding House, Summer 2015</p>
+      <p>served as CTO of <b>YeahEdu</b>, 12 2015</p>
+      <p className='side'>Built <b>Seperpay</b>, side project, 07 2016</p>
+      <p>Studied web dev in <b>CodingHouse</b>, 04 2016</p>
       <p className='move'>Mountain View ✈ Fremont, 2016</p>
-      <p>changed Major to Anthropology, Fall 2015</p>
-      <p>did archaeology in Ireland, Summer 2015</p>
-      <p>sold Willo, Spring 2015</p>
-      <p>studied Graphic and X design at Foothill College, 2014</p>
+      <p>changed Major to <b>Anthropology</b>, 08 2015</p>
+      <p>did <b>archaeology</b> in Ireland, 07 2015</p>
+      <p><b>sold</b> Willo, 02 2015</p>
+      <p>studied <b>Graphic&iX design</b> at Foothill College, 08 2014</p>
       <p className='move'>Taipei ✈ Mountain View, 2014</p>
-      <p>founded <b>Willo</b>, Summer 2013</p>
+      <p>founded <b>Willo</b>, 07 2013</p>
       <p className='move'>Taipei ✈ Shanghai, 2012</p>
-      <p>graduate from HSNU, Summer 2012</p>
+      <p><b>graduated</b> from HSNU, 08 2012</p>
     </div>)
   }
   renderEvents(){
@@ -44,11 +41,6 @@ export default class Home extends Component {
   }
   renderLinks(){
     return (<div>
-      <div className='centerTitle'>
-        <h3>
-          Here to find amazingandyyy
-        </h3>
-      </div>
       <div className="link-container">
         {Links.map((link, index)=>{
           return (<a href={link.url} target="_blank" key={index}>
@@ -63,7 +55,10 @@ export default class Home extends Component {
   render() {
     return (
       <div className="component home">
-        {this.renderIntroduction()}
+        <div className='centerTitle'>
+          <h3>Andy Chen</h3>
+        </div>
+      {this.renderIntroduction()}
         {this.renderLinks()}
       </div>
     );
