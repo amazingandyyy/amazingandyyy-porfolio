@@ -1,5 +1,0 @@
-const bankingCourse = {
-
-}
-
-export {bankingCourse};

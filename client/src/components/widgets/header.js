@@ -11,8 +11,8 @@ class Header extends Component {
                         </Link>
                     </div>
                     <div className="menu">
-                        <Link className="item" activeClassName="active" to='/topics'>Topics</Link>
-                        <Link className="item" activeClassName="active" to='/hackathons'>Hackathons</Link>
+                        {/* <Link className="item" activeClassName="active" to='/topics'>Topics</Link>
+                        <Link className="item" activeClassName="active" to='/hackathons'>Hackathons</Link> */}
                         <a className="item" href='https://github.com/amazingandyyy' target='_blank'>Github</a>
                     </div>
             </div>)

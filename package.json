@@ -4,11 +4,8 @@
   "description": "MERN stack web app starter built by amazingandyyy",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node ./server/dist/server.js",
-    "dev": "babel-watch ./server/src/server.js",
-    "build-c": "NODE_ENV=production rimraf ./client/dist && webpack -p",
-    "build-s": "rimraf ./server/dist && babel ./server/src -d ./server/dist",
-    "build": "npm run build-c && npm run build-s"
+    "build": "NODE_ENV=production rimraf ./client/dist && webpack -p",
+    "dev": "webpack-dev-server"
   },
   "repository": "https://github.com/amazingandyyy/amazingandyyy-starter",
   "author": "amazingandyyy",

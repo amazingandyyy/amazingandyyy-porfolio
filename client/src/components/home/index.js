@@ -4,19 +4,33 @@ import { Links } from './data';
 export default class Home extends Component {
   renderIntroduction(){
     return (<div>
-            <br/>- UC Berkeley Alumn(Spring 18)
-            <br/>- Draper University Alumn(Fall 18)
-            <br/>- attended/mentored over 40 hackathons(12 champions)
-            <br/>- active contributor on <a href="https://www.github.com/amazingandyyy" target="_blank">Github</a> 
-            <br/>- designer on <a href="https://www.behance.net/andsigner" target="_blank">Behance</a> 
-            <br/>- photographer on <a href="https://500px.com/andysign" target="_blank">500px</a>
-            <br/>- livestream coding host on <a href="https://www.livecoding.tv/amazingandyyy/" target="_blank">LiveEdu</a>(200K+ views)
-            <br/>- consulting experience for 40+ startups
-            <br/>- coded with Swift 1.0 > LAMP > RoR > MEAN > MEAN 2.0 -> MERN/RN -> Golang/Node/Solidity
-            <br/>- passionated with everything about <b>Node.js</b> and <b>Blockchain</b>
-            <br/>
-            <br/>
-            <hr />
+      <h1>amazingandyyy</h1>
+      <div className='centerTitle'>
+        <h3>Andy Chen</h3>
+      </div>
+      <p>Joined Draper University, fall 2018</p>
+      <p>CTO of <b>BSOS</b>, summer 2018</p>
+      <p>Founded <b>BNS</b>, summer 2018</p>
+      <p className='move'>Berkeley ✈ Daly City, summer 2018</p>
+      <p className='side'>Built Leptin, side project, spring 2017</p>
+      <p className='side'>Built Revieweer, side project, spring 2018</p>
+      <p className='side'>Build Shepherd, side project, winter 2017</p>
+      <p>served as CTO at <b>Ventured Network</b>, summer 2017</p>
+      <p>bought my first Bitcoin at $1254/each, spring 2017</p>
+      <p>bought my first Ethereum at $42/each, spring 2017</p>
+      <p className='move'>Fremont ✈ Berkeley, 2016</p>
+      <p>served as CTO of <b>YeahEdu</b>, healthy, 2015</p>
+      <p className='side'>Built Seperpay, side project, 2016</p>
+      <p>Studied web dev in Coding House, Summer 2015</p>
+      <p className='move'>Mountain View ✈ Fremont, 2016</p>
+      <p>changed Major to Anthropology, Fall 2015</p>
+      <p>did archaeology in Ireland, Summer 2015</p>
+      <p>sold Willo, Spring 2015</p>
+      <p>studied Graphic and X design at Foothill College, 2014</p>
+      <p className='move'>Taipei ✈ Mountain View, 2014</p>
+      <p>founded <b>Willo</b>, Summer 2013</p>
+      <p className='move'>Taipei ✈ Shanghai, 2012</p>
+      <p>graduate from HSNU, Summer 2012</p>
     </div>)
   }
   renderEvents(){
@@ -30,8 +44,10 @@ export default class Home extends Component {
   }
   renderLinks(){
     return (<div>
-      <div>
-        Here to find me
+      <div className='centerTitle'>
+        <h3>
+          Here to find amazingandyyy
+        </h3>
       </div>
       <div className="link-container">
         {Links.map((link, index)=>{

@@ -1,12 +1,49 @@
 .home{
+    text-align: left;
+    margin: auto;
+    h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    p{
+        text-transform: capitalize;
+        line-height: 15px;
+        &:hover {
+            transform: translateX(-5px);
+            transition: .1s all ease-in-out;
+        }
+        &.side {
+            opacity: 0.5;
+        }
+        &.move {
+            text-align: right !important;
+            opacity: 0.2;
+            text-transform: uppercase;
+        }
+    }
+    .centerTitle{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+    }
     .link-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        a {
+            text-decoration: none !important;
+            color: rgba(0,0,0,0.8);
+        }
         .link{
             margin: 10px;
             padding: 4px;
             text-align: center;
+            color: rgba(0,0,0,0.8);
+            :hover{
+                font-weight: 900;
+            }
         }
     }
 }
