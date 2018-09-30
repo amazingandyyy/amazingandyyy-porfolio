@@ -3,8 +3,9 @@
   "version": "3.0.0",
   "description": "sources of amazingandyyy.com",
   "scripts": {
-    "build": "NODE_ENV=production rimraf ./docs && webpack -p",
-    "dev": "webpack-dev-server"
+    "build": "NODE_ENV=production rimraf ./docs && webpack -p && npm run copy-cname",
+    "dev": "webpack-dev-server",
+    "copy-cname": "touch docs/CNAME && echo \"amazingandyyy.com\" >> docs/CNAME "
   },
   "repository": "https://github.com/amazingandyyy/pages",
   "author": "amazingandyyy",
