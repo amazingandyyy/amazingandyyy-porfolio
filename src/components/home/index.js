@@ -17,7 +17,7 @@ export default class Home extends Component {
       <p>Studied <b>Cognitive Science</b> at <b>UC Berkeley</b> in <span className='date'>08 2016</span></p>
       <p className='move'>Fremont ✈ in <span>Berkeley in 2016</span></p>
       <p className='side'>Built <b>Seperpay</b> side project in <span className='date'>07 2016</span></p>
-      <p className='side'>Built <b>JRM</b> side project in <span className='date'>06 2015</span></p>
+      <p className='side'>Built <b>JobRM</b> side project in <span className='date'>06 2015</span></p>
       <p className='side'>Built <b>VoiceAlbum</b> side project in <span className='date'>05 2015</span></p>
       <p>Studied web dev in <b>CodingHouse</b> in <span className='date'>04 2016</span></p>
       <p className='move'>Mountain View ✈ in <span>Fremont in 2016</span></p>
