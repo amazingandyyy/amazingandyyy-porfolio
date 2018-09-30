@@ -23,11 +23,11 @@ const ifProd = plugin => process.env.NODE_ENV
 
 module.exports = {
   entry: {
-    bundle: './client/src/index.js',
+    bundle: './src/index.js',
     vendor: VENDER_LIBS
   },
   output: {
-    path: path.join(__dirname, 'client/dist'),
+    path: path.join(__dirname, 'docs'),
     filename: '[name].[chunkhash].js'
   },
   devtool: "source-map",
@@ -75,14 +75,11 @@ module.exports = {
       .CommonsChunkPlugin({
         names: ['vendor', 'manifest']
       }),
-    new HtmlWebpackPlugin({template: 'client/src/index.html'}),
+    new HtmlWebpackPlugin({template: 'src/index.html'}),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       "global.GENTLY": false
     }),
-    // new webpack
-    //   .optimize
-    //   .UglifyJsPlugin({sourceMap: true}),
     new ExtractTextPlugin('style.css')
   ],
   node: {

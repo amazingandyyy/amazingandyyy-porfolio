@@ -2,9 +2,8 @@
   "name": "pages",
   "version": "3.0.0",
   "description": "sources of amazingandyyy.com",
-  "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production rimraf ./client/dist && webpack -p",
+    "build": "NODE_ENV=production rimraf ./docs && webpack -p",
     "dev": "webpack-dev-server"
   },
   "repository": "https://github.com/amazingandyyy/pages",
