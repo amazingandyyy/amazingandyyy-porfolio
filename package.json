@@ -1,13 +1,13 @@
 {
-  "name": "amazingandyyy-starter",
-  "version": "2.0.0",
-  "description": "MERN stack web app starter built by amazingandyyy",
+  "name": "pages",
+  "version": "3.0.0",
+  "description": "sources of amazingandyyy.com",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production rimraf ./client/dist && webpack -p",
     "dev": "webpack-dev-server"
   },
-  "repository": "https://github.com/amazingandyyy/amazingandyyy-starter",
+  "repository": "https://github.com/amazingandyyy/pages",
   "author": "amazingandyyy",
   "license": "MIT",
   "dependencies": {
