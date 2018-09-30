@@ -33,7 +33,7 @@ export default class Home extends Component {
       <p>Studied economics at <b>SJTU</b> in <span className='date'>08 2012</span></p>
       <p className='move'>Taipei ✈ in <span>Shanghai in 2012</span></p>
       <p><b>graduated</b> from high school <b>HSNU</b> in <span className='date'>08 2012</span></p>
-      <p>Won <b>Golden Metal</b> of <b>Taiwan Geography Olympiad</b> in <span className='date'>12 2011</span></p>
+      <p>Won <b>Golden Medal</b> of <b>Taiwan Geography Olympiad</b> in <span className='date'>12 2011</span></p>
       <p className='move'>New Taipei ✈ in <span>Taipei in 2006</span></p>
       <p>Founded <b>ㄅㄨ！ㄅㄨ！車 comic series</b> in <span className='date'> 2004</span></p>
       <p className='move'>Yun Lin ✈ New in <span>Taipei in 1997</span></p>
