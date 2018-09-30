@@ -4,22 +4,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const VENDER_LIBS = [
-  "jquery",
-  "lodash",
-  "moment",
   "react",
   "react-dom",
-  "react-redux",
-  "react-router",
-  "redux",
-  "redux-form",
-  "redux-thunk",
-  "axios"
+  "react-router"
 ]
-
-const ifProd = plugin => process.env.NODE_ENV
-  ? plugin
-  : null;
 
 module.exports = {
   entry: {
