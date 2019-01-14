@@ -1,9 +1,5 @@
 
 const Links = [{
-  title: 'Facebook',
-  url: 'https://www.facebook.com/amazingandyyy',
-  fa: 'facebook',
-},{
   title: 'Github',
   url: 'https://github.com/amazingandyyy',
   fa: 'github-alt'
@@ -12,9 +8,13 @@ const Links = [{
   url: 'https://www.linkedin.com/in/amazingandyyy',
   fa: 'linkedin'
 },{
-  title: 'AngelList',
-  url: 'https://angel.co/amazingandyyy',
-  fa: 'angellist'
+  title: 'Resume',
+  url: 'https://amazingandyyy.com/resume/Andy_Chen_Resume_2019.pdf',
+  fa: 'address-card'
+},{
+  title: 'Facebook',
+  url: 'https://www.facebook.com/amazingandyyy',
+  fa: 'facebook',
 }]
 
 

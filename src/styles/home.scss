@@ -3,14 +3,18 @@
     cursor: crosshair;
     margin: auto;
     user-select: none;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    padding-bottom: 100px;
+    // @media screen and (max-width: 768px) {
+    //     text-align: left;
+    // }
     h1 {
         margin-bottom: 20px;
         text-align: center;
         font-size: 2rem;
     }
     p{
-        text-transform: capitalize;
+        // text-transform: capitalize;
         display: block;
         margin: 0px;
         padding: 8px;
@@ -21,12 +25,16 @@
                 color: white;
                 background: black;
                 display: inline-block;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 transition: .1 all ease-in-out;
                 font-weight: 100;
                 padding-left: 5px;
                 padding-right: 5px;
             }
+        }
+        .date {
+            font-size: 70%;
+            font-style: italic;
         }
         b {
             &:hover{
@@ -38,7 +46,7 @@
             }
         }
         &.side {
-            opacity: 0.8;
+            opacity: 0.7;
             font-size: 0.9rem;
             // transform: translateX(-20px);
         }
@@ -46,6 +54,7 @@
             text-align: left !important;
             opacity: 0.2;
             text-transform: uppercase;
+            line-height: 2rem;
             &:hover{
                 transform: translateX(0px);
             }
@@ -55,13 +64,18 @@
         margin-top: 50px;
         margin-bottom: 30px;
         text-align: center;
-        font-family: 'Merriweather', serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 900;
+        font-family: 'Open Sans', 'Sans', 'Helvetica'
+        // font-family: 'Merriweather', serif;
     }
     .link-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 100px; 
+        margin-bottom: 50px;
         a {
             text-decoration: none !important;
             color: rgba(0,0,0,0.8);
@@ -74,7 +88,7 @@
             color: white;
             background: black;
             display: inline-block;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: .1s all ease-in-out;
             font-weight: 100;
             padding: 2px 10px;
