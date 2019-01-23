@@ -11,11 +11,11 @@ script:
 deploy:
   provider: pages
   local-dir: docs
-  repo: amazingandyyy/amazingandyyy.github.io
+  repo: amazingandyyy/pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
     branch: master
-  target-branch: master
+  target-branch: gh-pages
   name: TravisCI Helper
