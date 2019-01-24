@@ -18,4 +18,4 @@ deploy:
   on:
     branch: master
   target-branch: master
-  name: TravisCI Helper
+  name: TravisCD Helper
