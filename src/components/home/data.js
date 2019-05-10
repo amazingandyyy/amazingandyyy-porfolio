@@ -2,7 +2,7 @@
 const Links = [{
   title: 'Github',
   url: 'https://github.com/amazingandyyy',
-  fa: 'github-alt'
+  fa: 'github'
 },{
   title: 'Linkedin',
   url: 'https://www.linkedin.com/in/amazingandyyy',
