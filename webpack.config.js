@@ -68,7 +68,9 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       "global.GENTLY": false
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin({
+      filename: 'style.[hash].css'
+    })
   ],
   node: {
     __dirname: true
