@@ -1,0 +1,28 @@
+.home{
+    text-align: left;
+    cursor: crosshair;
+    margin: auto;
+    user-select: none;
+    font-size: 1.2rem;
+    padding-bottom: 100px;
+
+    h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .name-title{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Open Sans', 'Sans', 'Helvetica';
+        .name {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+    }
+    
+}
