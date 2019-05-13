@@ -1,6 +1,10 @@
+
 import React from 'react';
 import './style.scss'
 export default () => (<div className='timeline-component'>
+    <div className='title-component'>
+        Timeline
+    </div>
     <p className='side'>Built <b>OnePressKit</b> side project <span className='date'>2019/04</span></p>
     <p>Joined <b>Minted</b> Software Architecture Team <span className='date'>2019/03</span></p>
     <p className='move'>Daly City ✈ San Francisco in 2019</p>

@@ -1,6 +1,6 @@
 {
   "name": "pages",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "sources of amazingandyyy.com",
   "scripts": {
     "build": "NODE_ENV=production rimraf ./docs && webpack -p && npm run copy-cname",

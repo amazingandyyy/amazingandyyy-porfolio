@@ -16,6 +16,12 @@ body {
     @media(max-width: 700px){
         padding: 10px 10px;
     }
+    .title-component {
+        text-transform: capitalize;
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 50px 0px 20px 0px;
+    }
 }
 
 @import './component';
