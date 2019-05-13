@@ -73,12 +73,11 @@
         }
     }
     .link-container{
-        max-width: 250px;
+        max-width: 300px;
+        display: block;
         margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         margin-bottom: 50px;
+        text-align: center;
         a {
             text-decoration: none !important;
             color: rgba(0,0,0,0.8);
@@ -94,6 +93,7 @@
             transition: .1s all ease-in-out;
             font-weight: 500;
             padding: 4px 10px;
+            width: 30px;
             &:hover{
                 transition: 0s color ease-in-out;
                 opacity: 0.8;
@@ -108,7 +108,7 @@
             @media(max-width: 700px){
                 font-size: 1.3rem;
                 width: 30px;
-                margin: 2px;
+                margin: 2px 10px;
                 padding-top: 5px;
                 padding-bottom: 5px;
             }
