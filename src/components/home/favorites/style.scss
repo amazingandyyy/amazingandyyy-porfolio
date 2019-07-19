@@ -44,17 +44,18 @@ $display-item-size: 125px;
             background: #555; 
             cursor: pointer;
         }
-        &.tools-that-i-stick-with {
+        &.tools-that-i-stick-with, &.blockchain-projects-i-vouch {
             .display-item .card {
                 .frame {
                     border-radius: 100px;
-                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    box-shadow: none;
                     &:hover{
                         transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
                         transform: translateY(-3px);
-                        box-shadow: none;
+                        border-radius: 100px;
                     }
                     &:active{
+                        border-radius: 100px;
                         transform: scale(0.97);
                         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
                     }
