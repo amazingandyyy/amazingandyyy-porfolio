@@ -17,12 +17,15 @@
             height: 150px;
             transition: .1s all ease-in-out;
             width: 240px;
-            &.more {
-                cursor: default;
-                &:hover {
-                    transform: translateY(0px);
-                    box-shadow: 0px 5px 20px rgba(0,0,0,0);
-                }
+            overflow: hidden;
+            img.background {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                opacity: 0.9;
+                filter: blur(0.5px) grayscale(10%);
+                box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
             }
             &:hover{
                 transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -33,15 +36,20 @@
                 transform: scale(0.97);
                 box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
             }
-
             @media (max-width: 700px){
-                width: 42vw;
-                margin: 5px;
+                width: 100%;
+                box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+                margin: 10px 5px;
             }
             .title {
                 line-height: 150px;
                 font-weight: 700;
                 color: white;
+                position: absolute;
+                margin: 0;
+                right: 0;
+                left: 0;
+                z-index: 99;
             }
         }
     }
