@@ -18,6 +18,7 @@
             transition: .1s all ease-in-out;
             width: 240px;
             overflow: hidden;
+            box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
             img.background {
                 width: 100%;
                 position: absolute;
@@ -25,7 +26,6 @@
                 right: 0;
                 opacity: 0.9;
                 filter: blur(0.5px) grayscale(10%);
-                box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
             }
             &:hover{
                 transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
