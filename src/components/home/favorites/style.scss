@@ -2,10 +2,11 @@ $display-item-size: 125px;
 
 .fav-display{
     .fav-module {
+        margin-bottom: 20px;
         .fav-module-title {
             text-transform: capitalize;
             opacity: 0.8;
-        }   
+        }
     }
     .display-container {
         width: 100%;
@@ -16,6 +17,7 @@ $display-item-size: 125px;
         justify-content: flex-start;
         padding-top: 10px;
         padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
 
         &:hover::-webkit-scrollbar {
             display: block;
@@ -68,6 +70,9 @@ $display-item-size: 125px;
                         left: 0px;
                         top: 0px;
                         right: 0px;
+                        width: 100%;
+                        margin: auto;
+                        text-align: center;
                     }
                 }
                 .name{
@@ -77,6 +82,7 @@ $display-item-size: 125px;
                     text-align: left;
                     margin: 0px;
                     overflow-wrap: break-word;
+                    text-transform: capitalize;
                 }
             }
             &:hover{

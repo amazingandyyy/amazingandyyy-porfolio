@@ -1,10 +1,9 @@
 import React from 'react';
 import './style.scss';
-import data from '../data';
+import data from './data';
 
 function open(link){
-    const url = link;
-    window.open(url, '_blank');
+    if(link && link!=="") window.open(link, '_blank');
 }
 
 export default () => (<div className='fav-display'>
@@ -16,7 +15,7 @@ export default () => (<div className='fav-display'>
                 {d.list.map((p, i)=>(<div className='display-item' key={i} onClick={() => open(p.link)}>
                     <div className='card' style={{width: `${d.meta.width}`}}>
                         <div className='frame' style={{height: `${d.meta.height}`, width: `${d.meta.width}`}}>
-                            <img src={p.img}  style={{height: `${d.meta.height}`, width: `${d.meta.width}`}} />
+                            <img src={p.img} />
                         </div>
                         <p className='name'>{p.name}</p>
                     </div>
