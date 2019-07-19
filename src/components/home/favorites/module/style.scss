@@ -1,0 +1,89 @@
+$display-item-size: 125px;
+
+.fav-display{
+    .fav-module {
+        .fav-module-title {
+            text-transform: capitalize;
+            opacity: 0.8;
+        }   
+    }
+    .display-container {
+        width: 100%;
+        border: none;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:hover::-webkit-scrollbar {
+            display: block;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+            height: 1px;
+            width: 0px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.01);
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.1);
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+            cursor: pointer;
+        }
+
+        .display-item {
+            text-align: center;
+            cursor: pointer;       
+            .card {
+                margin: 10px;
+                .frame {
+                    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    &:hover{
+                        transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                        transform: translateY(-3px);
+                        box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+                    }
+                    &:active{
+                        transform: scale(0.97);
+                        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+                    }
+                    img {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        right: 0px;
+                    }
+                }
+                .name{
+                    display: block;
+                    opacity: 0.6;
+                    font-size: 0.8rem;
+                    text-align: left;
+                    margin: 0px;
+                    overflow-wrap: break-word;
+                }
+            }
+            &:hover{
+                .name{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

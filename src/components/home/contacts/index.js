@@ -8,7 +8,6 @@ export default () => (<div>
         return (<a href={link.url} target="_blank" key={index}>
         <div className={'link '+link.title}>
           <i className={'fa fa-'+link.fa}></i>
-          {/* <span> {link.title}</span> */}
         </div></a>)
       })}
     </div>

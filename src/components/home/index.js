@@ -3,7 +3,8 @@ import './style.scss';
 
 import Timeline from './timeline';
 import Contacts from './contacts';
-import Creations from './creations';
+import Works from './works';
+import Favorites from './favorites';
 
 const Name = () => (<div className='name-title'>
   <div className='name'>Andy Chen</div>
@@ -14,6 +15,7 @@ export default () => (
     <Name/>
     <Contacts />
     <Timeline />
-    <Creations />
+    <Works />
+    <Favorites />
   </div>
 );

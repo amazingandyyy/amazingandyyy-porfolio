@@ -2,9 +2,13 @@ import React from 'react';
 import './style.scss';
 
 const Links = [{
+    title: 'Open Source',
+    link: 'https://github.com/amazingandyyy',
+    background: 'https://miro.medium.com/max/1000/1*R6w2vjh0ve0sb7aM40-n_g.jpeg'
+},{
     title: 'Modeling',
     link: 'https://3dwarehouse.sketchup.com/user/1132019358790131921841269/Entrepreneur-Andy?nav=models',
-    background: 'https://i.imgur.com/ECsHSVd.png'
+    background: 'https://i.imgur.com/sVKzIjf.png'
 },{
     title: 'Design',
     link: 'https://www.behance.net/amazingandyyy',
@@ -12,7 +16,7 @@ const Links = [{
 },{
     title: 'Photography',
     link: 'https://500px.com/amazingandyyy',
-    background: 'https://i.imgur.com/tCFwys0.png'
+    background: 'https://i.imgur.com/DCMWnJR.jpg'
 }, {
     title: 'Blogs',
     link: 'https://medium.com/@amazingandyyy',
@@ -21,17 +25,16 @@ const Links = [{
 
 export default () => (<div className='works-component'>
     <div className='title-component'>
-        Creations
+        Works
     </div>
     <div className='card-container'>
         {Links.map(i=>(<a key={i.link} href={i.link} target='_blank'>
-                <div className='card-item' style={{'background': `url(${i.background}) no-repeat center center`}}>
+                <div className='card-item'>
+                {/* style={{'background': `url(${i.background}) no-repeat center center`}} */}
                     <div className='title'>{i.title}</div>
+                    <img className='background' src={i.background}/>
                 </div>
             </a>)
         )}
-        {/* <div className='card-item more' style={{'background': 'rgba(0,0,0,0.05)'}}>
-            <div className='title' style={{'color': 'black'}}>More...</div>
-        </div> */}
     </div>
 </div>)
