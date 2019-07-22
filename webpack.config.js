@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var d = new Date();
 
 const VENDER_LIBS = [
   "react",
@@ -66,6 +67,7 @@ module.exports = {
     new HtmlWebpackPlugin({template: 'src/index.html'}),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.LAST_UPDATE': JSON.stringify(d.getTime()),
       "global.GENTLY": false
     }),
     new ExtractTextPlugin({

@@ -5,6 +5,7 @@ import Timeline from './timeline';
 import Contacts from './contacts';
 import Works from './works';
 import Favorites from './favorites';
+import Footer from './footer';
 
 const Name = () => (<div className='name-title'>
   <div className='name'>Andy Chen</div>
@@ -17,5 +18,6 @@ export default () => (
     <Timeline />
     <Works />
     <Favorites />
+    <Footer />
   </div>
 );

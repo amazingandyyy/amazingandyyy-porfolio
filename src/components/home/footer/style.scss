@@ -1,0 +1,11 @@
+.component.footer {
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    .last-built {
+        font-size: 0.7rem;
+        opacity: 0.5;
+    }
+}
