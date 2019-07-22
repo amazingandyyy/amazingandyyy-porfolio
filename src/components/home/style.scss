@@ -1,10 +1,7 @@
 .home{
     text-align: left;
-    // cursor: crosshair;
     margin: auto;
     font-size: 1.2rem;
-    // padding-bottom: 100px;
-
     h1 {
         margin-bottom: 20px;
         text-align: center;
@@ -19,8 +16,11 @@
         .name {
             margin-bottom: 10px;
             text-align: center;
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 900;
+            @media(max-width: 700px){
+                font-size: 2.5rem;
+            }
         }
     }
     
