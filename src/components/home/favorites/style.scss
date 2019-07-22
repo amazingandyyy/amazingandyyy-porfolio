@@ -44,7 +44,8 @@ $display-item-size: 125px;
             background: #555; 
             cursor: pointer;
         }
-        &.tools, &.blockchain-projects {
+
+        &.products, &.monthly-events, &.blockchain-projects {
             .display-item .card {
                 .frame {
                     border-radius: 100px;
@@ -59,6 +60,9 @@ $display-item-size: 125px;
                         border-radius: 100px;
                         transform: scale(0.97);
                         box-shadow: 0px 0px 20px rgba(0,0,0,0);
+                    }
+                    img {
+                        border-radius: 100px;
                     }
                 }
                 .name, .notes {

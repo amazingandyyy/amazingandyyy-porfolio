@@ -15,7 +15,7 @@ export default () => (<div className='fav-display'>
                 {d.list.map((p, i)=>(<div className='display-item' key={i} onClick={() => open(p.link)}>
                     <div className='card' style={{width: `${d.meta.width}`}}>
                         <div className='frame' style={{height: `${d.meta.height}`, width: `${d.meta.width}`}}>
-                            <img src={p.img} />                            
+                            <img loading='lazy' src={p.img} />                            
                         </div>
                         <p className='name'>{p.name}</p>
                         {p.notes&&<p className='notes'>{`${p.notes}`}</p>}

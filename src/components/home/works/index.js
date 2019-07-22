@@ -30,9 +30,8 @@ export default () => (<div className='works-component'>
     <div className='card-container'>
         {Links.map(i=>(<a key={i.link} href={i.link} target='_blank'>
                 <div className='card-item'>
-                {/* style={{'background': `url(${i.background}) no-repeat center center`}} */}
                     <div className='title'>{i.title}</div>
-                    <img className='background' src={i.background}/>
+                    <img loading='lazy' className='background' src={i.background}/>
                 </div>
             </a>)
         )}
