@@ -1,5 +1,5 @@
 .link-component{
-    max-width: 300px;
+    max-width: 500px;
     display: block;
     margin: auto;
     margin-bottom: 50px;
@@ -12,14 +12,14 @@
         margin: 10px;
         text-align: center;
         color: rgba(0,0,0,1);
-        border-radius: 5px;
-        background: rgba(black, 0.1);
+        border-radius: 50px;
+        background: rgba(black, 0.07);
         display: inline-block;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         transition: .1s all ease-in-out;
         font-weight: 500;
-        padding: 4px 10px;
-        width: 50px;
+        padding: 6px 12px;
+        width: 60px;
         &:hover{
             transition: 0s color ease-in-out;
             opacity: 0.8;
