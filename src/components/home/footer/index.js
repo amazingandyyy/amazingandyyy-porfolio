@@ -25,7 +25,8 @@ function timeSince(date) {
 }
 
 export default () => {
-    return (<div className='component footer'>Amazingandyyy © {d.getFullYear()}<br/>
-        <div className='last-built'>updated with ❤️ {timeSince(process.env.LAST_UPDATE)} ago in San Francisco</div>
+    return (<div className='component footer'>
+        <div className='last-built'>Updated with ❤️ {timeSince(process.env.LAST_UPDATE)} ago in San Francisco</div>
+        <div >Amazingandyyy © {d.getFullYear()}</div>
     </div>)
 }
