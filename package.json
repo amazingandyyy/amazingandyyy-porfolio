@@ -5,7 +5,7 @@
   "scripts": {
     "build": "NODE_ENV=production rimraf ./docs && webpack -p && npm run copy-cname",
     "dev": "webpack-dev-server",
-    "copy-cname": "touch docs/CNAME && echo \"www.amazingandyyy.com\" >> docs/CNAME "
+    "copy-cname": "cp -rf src/statics/CNAME docs/CNAME"
   },
   "repository": "https://github.com/amazingandyyy/pages",
   "author": "amazingandyyy",
