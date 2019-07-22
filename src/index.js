@@ -11,5 +11,7 @@ ReactDOM.render(
   //   routes={RouteComponent}
   //   >
   // </Router>
-  <Home />
+  <div className='app'>
+    <Home />
+  </div>
   , document.getElementById('app'));
