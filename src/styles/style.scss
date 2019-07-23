@@ -1,4 +1,5 @@
 @import './variable';
+@import './display-drawer.scss';
 
 html{
     -webkit-font-smoothing: antialiased;
@@ -11,6 +12,7 @@ body {
     box-sizing: border-box;
     font-family: $sans;
 }
+
 .app {
     padding: 30px 15px;
     padding-bottom: 10px;

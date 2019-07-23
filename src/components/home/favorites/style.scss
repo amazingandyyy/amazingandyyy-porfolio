@@ -1,8 +1,8 @@
+
 $display-item-size: 125px;
 
 .fav-display{
     .fav-module {
-        margin-bottom: 20px;
         .fav-module-title {
             text-transform: capitalize;
             font-weight: 600;
@@ -12,12 +12,16 @@ $display-item-size: 125px;
     .display-container {
         width: 100%;
         border: none;
-        overflow-y: scroll;
+        overflow-y: hidden;
+        overflow-x: scrool;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
         -webkit-overflow-scrolling: touch;
 
         &:hover::-webkit-scrollbar {
@@ -26,7 +30,7 @@ $display-item-size: 125px;
 
         &::-webkit-scrollbar {
             display: none;
-            height: 1px;
+            height: 0px;
             width: 0px;
         }
         
@@ -47,33 +51,41 @@ $display-item-size: 125px;
         }
 
         &.products, &.monthly-events, &.blockchain-projects {
-            .display-item .card {
-                .frame {
-                    border-radius: 100px;
-                    box-shadow: none;
-                    &:hover{
-                        transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-                        transform: translateY(-3px);
+            .display-item{
+                .card {
+                    .frame {
                         border-radius: 100px;
-                        box-shadow: 0px 0px 20px rgba(0,0,0,0);
+                        box-shadow: none;
+                        &:hover{
+                            transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                            transform: translateY(-3px);
+                            border-radius: 100px;
+                            box-shadow: 0px 0px 20px rgba(0,0,0,0);
+                        }
+                        &:active{
+                            border-radius: 100px;
+                            transform: scale(0.97);
+                            box-shadow: 0px 0px 20px rgba(0,0,0,0);
+                        }
+                        img {
+                            border-radius: 100px;
+                        }
                     }
-                    &:active{
-                        border-radius: 100px;
-                        transform: scale(0.97);
-                        box-shadow: 0px 0px 20px rgba(0,0,0,0);
+                    .name, .notes {
+                        text-align: center;
                     }
-                    img {
-                        border-radius: 100px;
-                    }
-                }
-                .name, .notes {
-                    text-align: center;
                 }
             }
         }
         .display-item {
             text-align: center;
             cursor: pointer;
+            &.pin-false{
+                opacity: 0.1;
+            }
+            &.pin-true {
+                opacity: 1;
+            }
             .card {
                 margin: 10px;
                 .frame {
