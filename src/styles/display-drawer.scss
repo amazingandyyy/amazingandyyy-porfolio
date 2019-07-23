@@ -11,13 +11,14 @@
             display: inline-block;
             float: right;
             cursor: pointer;
-            margin: 5px;
+            margin: 10px;
+            margin-right: 0px;
             text-transform: capitalize;
             background: rgba(0,0,0,0.1);
             border-radius: 3px;
-            padding: 6px 10px 5px;
+            padding: 8px 15px 6px;
             text-align: center;
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-weight: 600;
             user-select: none;
             &:hover{
@@ -89,7 +90,7 @@
         }
         &.false {
             transition: .2s all ease-in-out;
-            bottom: -150px;
+            bottom: -500px;
             right: 0;
             left: 0;
         }
