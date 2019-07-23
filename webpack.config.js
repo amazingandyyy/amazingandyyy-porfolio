@@ -1,7 +1,7 @@
-var webpack = require('webpack');
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var d = new Date();
 
 const VENDER_LIBS = [
@@ -14,6 +14,11 @@ module.exports = {
   entry: {
     bundle: './src/index.js',
     vendor: VENDER_LIBS
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
   },
   output: {
     path: path.join(__dirname, 'docs'),
@@ -28,7 +33,16 @@ module.exports = {
         exclude: /node_modules/
       }, {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({fallbackLoader: "style-loader", loader: "css-loader!sass-loader"})
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+            },
+          },
+          'css-loader',
+          'sass-loader'
+        ]
       }, {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
@@ -59,20 +73,18 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack
-      .optimize
-      .CommonsChunkPlugin({
-        names: ['vendor', 'manifest']
-      }),
     new HtmlWebpackPlugin({template: 'src/index.html'}),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       'process.env.LAST_UPDATE': JSON.stringify(d.getTime()),
       "global.GENTLY": false
     }),
-    new ExtractTextPlugin({
-      filename: 'style.[hash].css'
-    })
+    new MiniCssExtractPlugin({
+      // https://github.com/webpack-contrib/mini-css-extract-plugin
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false
+    }),
   ],
   node: {
     __dirname: true
