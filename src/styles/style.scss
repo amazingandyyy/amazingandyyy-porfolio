@@ -7,6 +7,9 @@ html{
 }
 
 body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
     padding-top: 0px;
     background: white;
     box-sizing: border-box;
@@ -15,15 +18,20 @@ body {
 
 .app {
     padding: 30px 15px;
-    padding-bottom: 10px;
     @media(max-width: 700px){
         padding: 10px 10px;
+        padding-bottom: 20px;
     }
     .title-component {
         text-transform: capitalize;
         font-weight: 900;
-        font-size: 2rem;
         margin: 50px 0px 20px 0px;
+        font-size: 2rem;
+        color: $gold;
+        @media(max-width: 700px){
+            font-size: 1.8rem;
+            text-align: center;
+        }
     }
 }
 

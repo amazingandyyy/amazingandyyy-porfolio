@@ -1,3 +1,6 @@
+
+@import '../../../styles/variable.scss';
+
 .link-component{
     max-width: 500px;
     display: block;
@@ -12,19 +15,18 @@
         margin: 10px;
         text-align: center;
         color: rgba(0,0,0,1);
-        border-radius: 50px;
+        border-radius: 5px;
         background: rgba(black, 0.07);
         display: inline-block;
         font-size: 1.3rem;
         transition: .1s all ease-in-out;
         font-weight: 500;
         padding: 6px 12px;
-        width: 60px;
+        width: 50px;
         &:hover{
             transition: 0s color ease-in-out;
-            opacity: 0.8;
             color: white;
-            background: black;
+            background: $gold;
             transform: scale(1.1);
         }
         &:active{
