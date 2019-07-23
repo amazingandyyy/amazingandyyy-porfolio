@@ -4,17 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var d = new Date();
 
-const VENDER_LIBS = [
-  "react",
-  "react-dom",
-  "react-router"
-]
-
 module.exports = {
-  entry: {
-    bundle: './src/index.js',
-    vendor: VENDER_LIBS
-  },
+  entry: './src/index.js',
   optimization: {
     splitChunks: {
       chunks: 'all'
@@ -24,7 +15,7 @@ module.exports = {
     path: path.join(__dirname, 'docs'),
     filename: '[name].[chunkhash].js'
   },
-  devtool: "source-map",
+  // devtool: "source-map",
   module: {
     rules: [
       {
