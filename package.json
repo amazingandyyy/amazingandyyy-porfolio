@@ -3,8 +3,8 @@
   "version": "3.0.1",
   "description": "sources of amazingandyyy.com",
   "scripts": {
-    "build": "NODE_ENV=production rimraf ./docs && webpack -p && npm run copy-static",
-    "dev": "webpack-dev-server",
+    "dev": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html -d docs && npm run copy-static",
     "copy-static": "cp -rf src/statics/* docs/"
   },
   "repository": "https://github.com/amazingandyyy/pages",
@@ -30,6 +30,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-watch": "^7.0.0",
     "css-loader": "^3.1.0",
+    "cssnano": "^4.1.10",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
