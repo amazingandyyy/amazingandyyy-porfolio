@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
   <meta name="HandheldFriendly" content="true">
   <meta name="google-site-verification" content="YsvuWJUsGFeePQ52X-RH3HCph7ggvWndflQ5Qp9vvAc" />
-
   <meta property="og:title" content="Andy Chen">
-  <meta name="description" content="Andy Chen, you may know me as amazingandyyy, is a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
-  <meta property="og:description" content="Andy Chen, you may know me as amazingandyyy, is a self-taught Anthropology turned software engineer/indie hacker/unicorn.">
+  <meta name="description" content="Andy Chen, you may know me as amazingandyyy, a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
+  <meta property="og:description" content="Andy Chen, you may know me as amazingandyyy, a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://avatars0.githubusercontent.com/u/7886068?s=460&v=4">
   <meta property="article:author" content="https://amazingandyyy.com">
@@ -28,11 +27,33 @@
     gtag('js', new Date());
     gtag('config', 'UA-97391318-4');
   </script>
+  <link rel='manifest' href='./manifest.json'>
 
 </head>
 <body ontouchstart="">
   <div id="app"></div>
   <script src='./index.js'></script>
+  <script>
+    // This is the "Offline page" service worker
+
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+  </script>
 </body>
 
 </html>
