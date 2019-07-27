@@ -4,8 +4,8 @@
   "description": "sources of amazingandyyy.com",
   "scripts": {
     "dev": "parcel ./src/index.html --open",
-    "build": "parcel build ./src/index.html -d docs && npm run copy-static",
-    "copy-static": "cp -rf statics/* docs/"
+    "build": "rm -rf docs && parcel build ./src/index.html -d docs && npm run copy-static",
+    "copy-static": "cp -rf src/statics docs/"
   },
   "repository": "https://github.com/amazingandyyy/pages",
   "author": "amazingandyyy",

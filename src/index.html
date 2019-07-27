@@ -27,7 +27,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-97391318-4');
   </script>
-  <link rel='manifest' href='./manifest.json'>
+  <link rel='manifest' href='./statics/manifest.json'>
 
 </head>
 <body ontouchstart="">
@@ -45,7 +45,7 @@
       } else {
         // Register the service worker
         navigator.serviceWorker
-          .register("pwabuilder-sw.js", {
+          .register("./statics/pwabuilder-sw.js", {
             scope: "./"
           })
           .then(function (reg) {
