@@ -6,8 +6,9 @@
     "dev": "parcel ./src/index.html --open",
     "build": "npm run cleanup && parcel build ./src/index.html -d docs && npm run copy",
     "cleanup": "rm -rf docs",
-    "copy": "npm run copy-static && npm run copy-cname",
+    "copy": "npm run copy-static && npm run copy-cname && npm run copy-manifest",
     "copy-static": "cp -rf src/statics docs/",
+    "copy-manifest": "cp -rf src/manifest.json docs/manifest.json",
     "copy-cname": "mv docs/statics/CNAME docs/CNAME"
   },
   "repository": "https://github.com/amazingandyyy/pages",
