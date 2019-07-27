@@ -1,6 +1,5 @@
-.env
-.DS_STORE
+.DS_Store
 node_modules
 dist
-npm-debug.log
 docs
+.cache
