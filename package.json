@@ -5,13 +5,14 @@
   "description": "sources of amazingandyyy.com",
   "scripts": {
     "dev": "NODE_ENV=dev && npm run env && parcel ./src/index.html --open",
-    "build": "NODE_ENV=production && npm run cleanup && npm run env && parcel build ./src/index.html -d docs && npm run copy",
+    "build": "NODE_ENV=production && npm run cleanup && npm run env && parcel build ./src/index.html -d docs && npm run copy && npm run cleanup-docs",
     "cleanup": "rm -rf docs",
     "copy": "npm run copy-static && npm run copy-cname && npm run copy-manifest",
     "env": "make insert-last-update-env",
     "copy-static": "cp -rf src/statics docs/",
     "copy-manifest": "cp -rf src/manifest.webmanifest docs/manifest.webmanifest",
-    "copy-cname": "mv docs/statics/CNAME docs/CNAME"
+    "copy-cname": "mv docs/statics/CNAME docs/CNAME",
+    "cleanup-docs": "rm -rf docs/*.pn"
   },
   "repository": "https://github.com/amazingandyyy/pages",
   "author": "amazingandyyy",
