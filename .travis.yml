@@ -14,7 +14,7 @@ deploy:
   repo: amazingandyyy/amazingandyyy.github.io
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  keep-history: true
+  keep-history: false
   on:
     branch: master
   target-branch: master
