@@ -2,7 +2,7 @@
 {
   "name": "pages",
   "version": "3.1.0",
-  "description": "sources of amazingandyyy.com",
+  "description": "source of https://amazingandyyy.com",
   "scripts": {
     "dev": "make dev",
     "build": "make"
