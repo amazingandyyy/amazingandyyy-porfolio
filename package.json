@@ -10,7 +10,7 @@
     "copy": "npm run copy-static && npm run copy-cname && npm run copy-manifest",
     "env": "make insert-last-update-env",
     "copy-static": "cp -rf src/statics docs/",
-    "copy-manifest": "cp -rf src/manifest.json docs/manifest.json",
+    "copy-manifest": "cp -rf src/manifest.webmanifest docs/manifest.webmanifest",
     "copy-cname": "mv docs/statics/CNAME docs/CNAME"
   },
   "repository": "https://github.com/amazingandyyy/pages",
