@@ -11,12 +11,11 @@ build: env
 
 copy:
 	cp -rf src/statics build/
-	cp -rf src/manifest.webmanifest build/manifest.webmanifest
 	cp -rf src/pwabuilder-sw.js build/pwabuilder-sw.js
-	mv build/statics/favicon.ico build/favicon.ico
 	mv build/statics/CNAME build/CNAME
 	rm -rf build/*.png
 	rm -rf build/*.map
+	rm -rf build/*.ico
 
 env:
 	echo LAST_UPDATE=$(now)000 > .env
