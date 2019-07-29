@@ -1,5 +1,7 @@
+@import '../../../styles/variable.scss';
+
 .timeline-component {
-    font-family: 'Open Sans', Helvetica, sans-serif !important;
+    font-family: $open-sans;
     p{
         font-size: 1.3rem;
         display: block;
