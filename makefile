@@ -13,9 +13,6 @@ copy:
 	cp -rf src/statics build/
 	cp -rf src/pwabuilder-sw.js build/pwabuilder-sw.js
 	mv build/statics/CNAME build/CNAME
-	rm -rf build/*.png
-	rm -rf build/*.map
-	rm -rf build/*.ico
 
 env:
 	echo LAST_UPDATE=$(now)000 > .env
