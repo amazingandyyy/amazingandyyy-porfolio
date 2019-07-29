@@ -11,7 +11,7 @@ build: env
 
 copy:
 	cp -rf src/pwabuilder-sw.js build/pwabuilder-sw.js
-	mv src/CNAME build/CNAME
+	cp -rf src/CNAME build/CNAME
 
 env:
 	echo LAST_UPDATE=$(now)000 > .env
