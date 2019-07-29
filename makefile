@@ -10,9 +10,8 @@ build: env
 	NODE_ENV=production && parcel build ./src/index.html -d build
 
 copy:
-	cp -rf src/statics build/
 	cp -rf src/pwabuilder-sw.js build/pwabuilder-sw.js
-	mv build/statics/CNAME build/CNAME
+	mv src/CNAME build/CNAME
 
 env:
 	echo LAST_UPDATE=$(now)000 > .env
