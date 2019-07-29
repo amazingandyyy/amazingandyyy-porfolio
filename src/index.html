@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-  <title>Amazingandyyy | Andy Chen</title>
-  <link rel='shortcut icon' type='image/x-icon' href='statics/favicon.ico' />
-  <link rel='manifest' href='statics/manifest.webmanifest'>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
-  <meta name="HandheldFriendly" content="true">
-  <meta name="google-site-verification" content="YsvuWJUsGFeePQ52X-RH3HCph7ggvWndflQ5Qp9vvAc" />
-  <meta property="og:title" content="Andy Chen">
-  <meta name="description" content="Andy Chen, you may know me as amazingandyyy, a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
-  <meta property="og:description" content="Andy Chen, you may know me as amazingandyyy, a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
-  <meta property="og:type" content="article">
-  <meta property="og:image" content="https://avatars0.githubusercontent.com/u/7886068?s=460&v=4">
-  <meta property="article:author" content="https://amazingandyyy.com">
-  <meta name="apple-mobile-web-app-title" content="Amazingandyyy.com">
-  <meta name="application-name" content="Amazingandyyy.com">
-  <meta name="theme-color" content="#000">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="google-site-verification" content="YsvuWJUsGFeePQ52X-RH3HCph7ggvWndflQ5Qp9vvAc" />
+    <meta property="og:title" content="Andy Chen">
+    <meta name="description" content="Andy Chen, you may know me as amazingandyyy, a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
+    <meta property="og:description" content="Andy Chen, you may know me as amazingandyyy, a self-taught Anthropologist turned software engineer/indie hacker/unicorn.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/7886068?s=460&v=4">
+    <meta property="article:author" content="https://amazingandyyy.com">
+    <meta name="apple-mobile-web-app-title" content="Amazingandyyy.com">
+    <meta name="application-name" content="Amazingandyyy.com">
+    <meta name="theme-color" content="#000">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.0.0/css/grid.min.css"> -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97391318-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-97391318-4');
-  </script>
-</head>
-<body ontouchstart="">
-  <div id="app"></div>
-  <script src='./index.js'></script>
-  <script>
-    // This is the "Offline page" service worker
-    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-    // Check compatibility for the browser we're running this in
-    if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
-        console.log("[PWA Builder] active service worker found, no need to register");
-      } else {
-        // Register the service worker
-        navigator.serviceWorker
-          .register("pwabuilder-sw.js", {
-            scope: "./"
-          })
-          .then(function (reg) {
-            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-          });
+    <title>Amazingandyyy | Andy Chen</title>
+    <link rel='shortcut icon' type='image/x-icon' href='statics/favicon.ico' />
+    <link rel='manifest' href='statics/manifest.webmanifest'>
+    <link rel="apple-touch-icon" type="image/png" sizes="192*192" href="statics/icons/header/apple-touch-icon-192.png">
+    <link rel="icon" type="image/png" sizes="192*192" href="statics/icons/header/apple-touch-icon-192.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.0.0/css/grid.min.css"> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97391318-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-97391318-4');
+    </script>
+  </head>
+  <body ontouchstart="">
+    <div id="app"></div>
+    <script src='./index.js'></script>
+    <script>
+      // This is the "Offline page" service worker
+      // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+      // Check compatibility for the browser we're running this in
+      if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+          console.log("[PWA Builder] active service worker found, no need to register");
+        } else {
+          // Register the service worker
+          navigator.serviceWorker
+            .register("pwabuilder-sw.js", {
+              scope: "./"
+            })
+            .then(function (reg) {
+              console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+            });
+        }
       }
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
