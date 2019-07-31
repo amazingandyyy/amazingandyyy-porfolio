@@ -78,7 +78,16 @@ export default {
         list: [{
             name: "Evernote",
             link: "https://evernote.com/",
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHDgu_SXnOOO1xeJ8BqF6fLCNPc95qnyyJry4w9TM9IcSyfWS"
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHDgu_SXnOOO1xeJ8BqF6fLCNPc95qnyyJry4w9TM9IcSyfWS",
+            intro: `
+## Still stick with Evernote
+Despite the fact that there are new note taking tools coming out recent year put Evernote into the shadow a bit, I still stick Evernote for the simple reason that Evernote is my first one and I am a little too old fashion to move to other apps. I sometimes feel sorry for new builder who launch a better alternative, but here is also a lesson, first mover advanctage sometimes take the lead and user stickness is a real thing, if your note taking app is not 10x better or create a new behavior, it's hard for user to move on to your new alternative product.
+
+## How I use it
+I just need an app that I can use it for free and take quick notes when I attend a meeting/meetup or just simpily write down my ideas when sitting in an Uber. Worth to mention, many people use Evernote to save article for later read, for that, I use pocket, another app that also in my favorite list.                
+With that been said, I highly recommand everyone to use Evernote purely for taking notes in plain text, don't use it for saving online articles or voice memo recording, then I am sure the free version will be more than enough for you for many years just like how I did it.
+            
+            `
         },{
             name: "Udemy",
             link: "https://udemy.com",
