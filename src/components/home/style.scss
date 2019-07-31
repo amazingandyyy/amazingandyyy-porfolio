@@ -1,3 +1,5 @@
+@import '../../styles/variable.scss';
+
 .home{
     text-align: left;
     margin: auto;
@@ -12,7 +14,7 @@
         margin-top: 50px;
         text-align: center;
         font-size: 1.5rem;
-        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-family: $open-sans;
         .name {
             margin-bottom: 10px;
             text-align: center;
