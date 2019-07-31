@@ -2,6 +2,9 @@
 $display-item-size: 125px;
 
 .fav-display{
+    div{
+        outline: 1px solid red;
+    }
     .fav-module {
         margin: 0 -10px;
         .fav-module-title {

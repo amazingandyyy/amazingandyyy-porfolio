@@ -8,6 +8,7 @@ function open(link){
     if(link && link!=="") window.open(link, '_blank');
 }
 
+const items = [];
 // &times;
 export default () => {
     const [item, setItem] = useState({});
@@ -16,37 +17,24 @@ export default () => {
     const reset = () => {setItem({}); setExpand(false); setExpandWhole(false)};
     const openDrawer = (p) => {setExpand(true);setItem(p)};
     const expandDrawer = () => {setExpandWhole(true)};
-    const handleMouseDown = (e) => {
-        console.log('handleMouseDown', e);
-    } 
-    const handleMouseMove = (e) => {
-        console.log('handleMouseMove', e);
-    } 
-    const handleMouseUp = () => {
-        console.log('handleMouseUp');
-    } 
-    const handleMouseLeave = () => {
-        console.log('handleMouseLeave');
-    } 
+    Object.keys(data).forEach(k=>{
+        const d = data[k];
+        const i = {d, k};
+        items.push(i);
+    })
     return (<div className='fav-display'>
-        <div className={`pin-${expand} display-drawer ${expand} full-${expandWhole}`}
-            onMouseDown={mouseDownEvent => handleMouseDown(mouseDownEvent)}
-            onMouseMove={mouseMoveEvent => handleMouseMove(mouseMoveEvent)}
-            onMouseUp={handleMouseUp}
-            // onMouseLeave={handleMouseLeave}
-        >
+        <div className={`pin-${expand} display-drawer ${expand} full-${expandWhole}`}>
             <div className='name'>{item.name}</div>
             <div className='check-it' onClick={()=>open(item.link)}>Check it out ></div>
-            {/* <span className={`expand ${expandWhole}`} onClick={expandDrawer}>
+            <span className={`expand ${expandWhole}`} onClick={expandDrawer}>
                 <i className="fas fa-chevron-up"></i>
             </span>
             <span className='close' onClick={reset}>
                 <i className="fas fa-chevron-down"></i>
-            </span> */}
+            </span>
             {item.intro ? <div className='intro'><ReactMarkdown source={item.intro} /></div>:<div className='intro text-center'>{`More introduction coming up!`}</div>}
         </div>
-        {Object.keys(data).map(k=>{
-            const d = data[k];
+        {items.map(({d, k})=>{
             return (<div key={k} className='fav-module'>
                 <div className='fav-module-title'>{`${k}`}</div>
                 <div className={`display-container ${k.split(' ').map(i=>i.toLowerCase()).join('-')}`}>
