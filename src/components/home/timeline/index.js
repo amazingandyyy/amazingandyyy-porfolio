@@ -5,6 +5,7 @@ export default () => (<div className='timeline-component'>
     <div className='title-component'>
         Timeline
     </div>
+    <p>Started <b>YC Startup School Online</b> <span className='date'>2019/07</span></p>
     <p className='side'>Built <b>OnePressKit</b> side project <span className='date'>2019/04</span></p>
     <p>Joined <b>Minted</b> Software Architecture Team <span className='date'>2019/03</span></p>
     <p className='move'>Daly City ✈ San Francisco in 2019</p>
