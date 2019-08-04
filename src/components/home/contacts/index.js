@@ -22,7 +22,9 @@ const Links = [{
 export default () => (<div>
     <div className="link-component">
       {Links.map((link, index)=>{
-        return (<a rel="noreferrer" href={link.url} target="_blank" key={index}>
+        return (<a onClick={()=>{
+          ga("send", "event", "contact", "click", link.title);
+        }} rel="noreferrer" href={link.url} target="_blank" key={index}>
         <div className={'link '+link.title}>
           <i className={'fa fa-'+link.fa}></i>
         </div></a>)

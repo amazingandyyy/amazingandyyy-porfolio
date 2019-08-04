@@ -4,13 +4,17 @@ import data from './data';
 
 function open(link){
     if(link && link!=="") window.open(link, '_blank');
+    ga("send", "event", "favorite", "check it out", p.name);
 }
 // &times;
 export default () => {
     const [item, setItem] = useState({});
     const [expand, setExpand] = useState(false);
     const reset = () => {setItem({}); setExpand(false)};
-    const openDrawer = (p) => {setExpand(true);setItem(p)};
+    const openDrawer = (p) => {
+        setExpand(true);setItem(p);
+        ga("send", "event", "favorite", "click", p.name);
+    };
     return (<div className='fav-display'>
         <div className={`pin-${expand} display-drawer ${expand}`}>
             <span className='close' onClick={reset}>CLOSE</span>

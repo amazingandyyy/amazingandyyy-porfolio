@@ -28,7 +28,9 @@ export default () => (<div className='works-component'>
         Works
     </div>
     <div className='card-container'>
-        {Links.map(i=>(<a rel="noreferrer" key={i.link} href={i.link} target='_blank'>
+        {Links.map(i=>(<a onClick={()=>{
+          ga("send", "event", "work", "click", i.title);
+        }} rel="noreferrer" key={i.link} href={i.link} target='_blank'>
                 <div className='card-item'>
                     <div className='title'>{i.title}</div>
                     <img loading='lazy' alt={i.title} className='background' src={i.background}/>
