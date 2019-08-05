@@ -36,10 +36,10 @@ export default () => (<div className='timeline-component'>
     <p className='general'>Served as president of <b>An-Tai Economics Debate Team</b> <span className='date'>2013/10</span></p>
     <p className='general'>Studied economics at <b>SJTU</b> <span className='date'>2012/08</span></p>
     <p className='move'>Taipei ✈ Shanghai in 2012</p>
-    <p className='general'><b>graduated</b> from high school <b>HSNU</b> <span className='date'>2012/08</span></p>
+    <p className='general'><b>Graduated</b> from <b>HSNU</b> <span className='date'>2012/08</span></p>
     <p className='general'>Won <b>Golden Medal</b> of <b>Taiwan Geography Olympiad</b> <span className='date'>2011/12</span></p>
     <p className='move'>New Taipei ✈ Taipei in 2006</p>
-    <p className='general'>Founded <b>ㄅㄨ！ㄅㄨ！車 comic series</b> <span className='date2004/'></span></p>
+    <p className='general'>Authored <b>ㄅㄨ！ㄅㄨ！車 comic series</b> <span className='date2004/'></span></p>
     <p className='move'>Yun Lin ✈ New Taipei in 1996</p>
     <p className='general'>Born in <b>Yun Lin</b> on Valentines Day. <span className='date'>1994/02/14</span></p>
     <p className='move'>Heaven ✈ World in 1994</p>
