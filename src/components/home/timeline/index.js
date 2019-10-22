@@ -5,11 +5,11 @@ export default () => (<div className='timeline-component'>
     <div className='title-component'>
         Timeline
     </div>
-    <p className='general'>Joined <b>YC Startup School Online</b> <span className='date'>2019/07</span></p>
-    <p className='side'>Built <b>OnePressKit</b> side project <span className='date'>2019/04</span></p>
+    <p className='general'>Graduated from <b>YC Startup School Online (SSO)</b> <span className='date'>2019/10</span></p>
+    <p className='side'>Built <b>Decohash</b> side project <span className='date'>2019/08</span></p>
     <p className='general'>Joined <b>Minted</b> Software Architecture Team <span className='date'>2019/03</span></p>
     <p className='move'>Daly City ✈ San Francisco in 2019</p>
-    <p className='general'>Joined <b>Draper University</b> <span className='date'>2018/09</span></p>
+    <p className='general'>Gradudated from <b>Draper University</b> <span className='date'>2018/11</span></p>
     <p className='general'>Served as CTO of <b>BSOS</b> <span className='date'>2018/08</span></p>
     <p className='general'>Founded <b>BNS</b> <span className='date'>2018/07</span></p>
     <p className='move'>Berkeley ✈ Daly City in 2018</p>
