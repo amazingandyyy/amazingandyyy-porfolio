@@ -30,7 +30,7 @@ export default () => {
                     {d.list.map(p=>(<div className={`display-item pin-${item.name===p.name || !expand}`} key={p.name} onClick={()=>openDrawer(p)}>
                         <div className='card' style={{width: `${d.meta.width}`}}>
                             <div className='frame' style={{height: `${d.meta.height}`, width: `${d.meta.width}`}}>
-                                <img loading='lazy' alt={p.name} src={p.img} />
+                                <img loading='lazy' async='on' alt={p.name} src={p.img} />
                             </div>
                             <p className='name'>{p.name}</p>
                             {p.notes&&<p className='notes'>{`${p.notes}`}</p>}
