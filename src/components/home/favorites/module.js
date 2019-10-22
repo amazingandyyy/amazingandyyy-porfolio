@@ -4,7 +4,7 @@ import data from './data';
 
 function open(link){
     if(link && link!=="") window.open(link, '_blank');
-    ga("send", "event", "favorite", "check it out", p.name);
+    ga("send", "event", "favorite", "check it out");
 }
 // &times;
 export default () => {
