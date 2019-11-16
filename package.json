@@ -1,11 +1,11 @@
-
 {
   "name": "pages",
   "version": "3.1.0",
   "description": "source of https://amazingandyyy.com",
   "scripts": {
-    "dev": "make dev",
-    "build": "make"
+    "dev": "parcel ./src/index.html --open",
+    "build": "make",
+    "build:new": "NODE_ENV=production && parcel build ./src/index.html -d build"
   },
   "repository": "https://github.com/amazingandyyy/pages",
   "author": "amazingandyyy",
