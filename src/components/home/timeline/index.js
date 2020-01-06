@@ -3,7 +3,7 @@ import React from 'react';
 import './style.scss'
 export default () => (<div className='timeline-component'>
     <div className='title-component'>
-        Timeline
+        Timeline <span style={{'display': 'none'}}>I need to list these out so I will not forget where am I coming from.</span>
     </div>
     <p className='general'>Graduated from <b>YC Startup School Online (SSO)</b> <span className='date'>2019/10</span></p>
     <p className='side'>Built <b>Decohash</b> side project <span className='date'>2019/08</span></p>

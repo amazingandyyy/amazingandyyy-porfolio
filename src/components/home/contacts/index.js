@@ -11,7 +11,7 @@ const Links = [{
   fa: 'linkedin'
 },{
   title: 'Resume',
-  url: 'https://amazingandyyy.com/resume/Andy_Chen_Resume_2019.pdf',
+  url: 'https://amazingandyyy.com/resume/Andy_Chen_Resume_2020.pdf',
   fa: 'address-card'
 },{
   title: 'Facebook',
