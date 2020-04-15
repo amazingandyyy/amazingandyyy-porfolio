@@ -34,7 +34,7 @@ export default {
         list: [{
             name: "Outliers",
             link: "",
-            img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Outliers.png/220px-Outliers.png"
+            img: "https://m.media-amazon.com/images/I/41uvQ6ytbkL.jpg"
         },{
             name: "The Lean Startup",
             link: "",
