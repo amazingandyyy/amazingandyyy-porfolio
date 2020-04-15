@@ -8,7 +8,7 @@ export default () => (<div className='timeline-component'>
     <div className='title-component'>
         Timeline <span style={{'display': 'none'}}>I need to list these out so I will not forget where am I coming from.</span>
     </div>
-    <p className='side'>Launched <HighlightLink text='MapItOut' href='http://mapitout.github.io/'/><span className='date'>2020/04</span></p>
+    <p className='side'>Launched <HighlightLink text='MapItOut' href='http://mapitout.github.io/'/> with my wife <span className='date'>2020/04</span></p>
     <p className='general'><b>Get married</b> with my amazing wife 🎊🎊🎊 <span className='date'>2020/03</span></p>
     <p className='general'>Graduated from <HighlightLink text='YC Startup School Online' href='https://www.startupschool.org'/><span className='date'>2019/10</span></p>
     <p className='side'>Launched <HighlightLink text='DecoHash' href='https://decohash.com/#/'/><span className='date'>2019/08</span></p>
