@@ -48,8 +48,7 @@ $display-item-size: 125px;
             cursor: pointer;
         }
 
-        &.products, &.events, &.blockchain-projects {
-            .display-item{
+        &.products, &.events, &.blockchain-projects {            .display-item{
                 .card {
                     .frame {
                         border-radius: 100px;

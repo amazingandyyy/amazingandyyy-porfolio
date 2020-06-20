@@ -25,7 +25,7 @@ const Links = [{
 
 export default () => (<div className='works-component'>
     <div className='title-component'>
-        Works
+        Create something at
     </div>
     <div className='card-container'>
         {Links.map(i=>(<a onClick={()=>{

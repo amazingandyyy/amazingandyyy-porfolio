@@ -4,7 +4,7 @@ import FavModule from './module';
 
 export default () => (<div className='fav-component'>
     <div className='title-component'>
-        Favorites
+        Admire for
     </div>
     <FavModule />
 </div>)

@@ -3,7 +3,7 @@ now=$(shell date '+%s')
 all: build copy
 
 dev: env
-	NODE_ENV=dev && parcel ./src/index.html --open
+	NODE_ENV=dev && npm run dev
 
 build: env
 	rm -rf build

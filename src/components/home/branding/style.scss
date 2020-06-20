@@ -1,0 +1,23 @@
+@import '../../../styles/variable.scss';
+
+.component.branding {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $open-sans;
+    margin-bottom: 10px;
+    .name {
+        text-align: center;
+        font-size: 7.5rem;
+        font-weight: 800;
+        opacity: 0.03;
+        @media(max-width: 750px){
+            font-size: 4rem;
+        }
+    }
+    .real-name {
+        color: rgba(0, 0, 0, 0.7);
+        font-family: $roboto;
+        font-size: 1.2rem;
+    }
+}

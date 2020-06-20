@@ -6,6 +6,7 @@
             text-align: center;
         }
         .card-item {
+            opacity: 0.1;
             cursor: pointer;
             display: inline-block;
             position: relative;
@@ -29,6 +30,7 @@
                 filter: blur(0.5px) grayscale(10%);
             }
             &:hover{
+                opacity: 1;
                 border-radius: 8px;
                 transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
                 transform: translateY(-3px);

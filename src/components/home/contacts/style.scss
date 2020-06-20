@@ -15,23 +15,24 @@
         margin: 10px;
         text-align: center;
         color: rgba(0,0,0,1);
-        border-radius: 5px;
-        background: rgba(black, 0.07);
+        border-radius: 50px;
+        background: rgba(black, 0.03);
         display: inline-block;
-        font-size: 1.3rem;
-        transition: .1s all ease-in-out;
+        font-size: 1.6rem;
         font-weight: 500;
         padding: 6px 12px;
         width: 50px;
+        border: 2px dotted rgba(0,0,0,0);
         &:hover{
-            transition: 0s color ease-in-out;
-            color: white;
-            background: $gold;
-            transform: scale(1.1);
+            transition: 0s all ease-in-out;
+            border: 2px dotted black;
+            font-size: 1.4rem;
         }
         &:active{
+            background: white;
             opacity: 0.8;
             transform: scale(0.95);
+            border-color: rgba(0,0,0,0.8);
         }
         @media(max-width: 700px){
             font-size: 1.3rem;
