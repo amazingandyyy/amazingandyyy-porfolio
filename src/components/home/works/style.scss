@@ -29,7 +29,7 @@
                 opacity: 0.9;
                 filter: blur(0.5px) grayscale(10%);
             }
-            &:hover{
+            &:hover,&:active,&:focus{
                 opacity: 1;
                 border-radius: 8px;
                 transition: .1s all cubic-bezier(0.075, 0.82, 0.165, 1);
