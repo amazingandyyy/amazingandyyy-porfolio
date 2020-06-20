@@ -19,7 +19,7 @@
   "devDependencies": {
     "eslint": "^3.16.1",
     "eslint-plugin-react": "^6.10.0",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.22.7"
   },
   "eslintConfig": {
