@@ -5,9 +5,7 @@ const HighlightLink = ({text, href}) => {
     return (<span><a className="highlight-link" href={href} target='_blank'><b>{`${text}`}</b></a>{` `}</span>)
 }
 export default () => (<div className='timeline-component'>
-    <div className='title-component'>
-        Stone of miles <span style={{'display': 'none'}}>I need to list these out so I will not forget where am I coming from.</span>
-    </div>
+    {/* <div className='title-component'>Life Event</div> */}
     <p className='general'>Joined <HighlightLink text='Turo' href='https://www.turo.com'/> DevOps Team <span className='date'>2020/06</span></p>
     <p className='side'>Launched <HighlightLink text='MapItOut' href='http://mapitout.github.io/'/> with my wife <span className='date'>2020/04</span></p>
     <p className='general'><b>Get married</b> with my amazing wife 🎊🎊🎊 <span className='date'>2020/03</span></p>

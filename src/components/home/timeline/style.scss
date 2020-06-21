@@ -21,25 +21,23 @@
         @media(max-width: 700px){
             font-size: 1.2rem;
         }
-        @media(min-width: 700px){
-            &:hover,&:active,&:focus {
+        &:hover,&:active,&:focus {
+            opacity: 1;
+            transform: translateX-(10px);
+            transition: .1s all ease-in-out;
+            b {
+                color: white;
+                background: black;
+                border-radius: 3px;
+                display: inline-block;
+                font-size: 1.5rem;
+                transition: .1 all ease-in-out;
+                padding-right: 8px;
+                padding-left: 8px;
+            }
+            .date {
                 opacity: 1;
-                transform: translateX-(10px);
-                transition: .1s all ease-in-out;
-                b {
-                    color: white;
-                    background: black;
-                    border-radius: 3px;
-                    display: inline-block;
-                    font-size: 1.5rem;
-                    transition: .1 all ease-in-out;
-                    padding-right: 8px;
-                    padding-left: 8px;
-                }
-                .date {
-                    opacity: 1;
-                    font-style: italic;
-                }
+                font-style: italic;
             }
         }
         .date {
