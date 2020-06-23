@@ -2,13 +2,16 @@
 
 .timeline-component {
     font-family: $open-sans;
+    .spotlight {
+        opacity: 1;
+    }
     p{
         font-size: 1.3rem;
         display: block;
         margin: 0px;
         padding: 10px 8px;
         font-weight: 500;
-        opacity: 0.1;
+        opacity: 0.1;   
         a {
             text-transform: capitalize;
             text-decoration: underline;

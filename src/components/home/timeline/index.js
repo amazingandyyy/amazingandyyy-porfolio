@@ -6,9 +6,11 @@ const HighlightLink = ({text, href}) => {
 }
 export default () => (<div className='timeline-component'>
     {/* <div className='title-component'>Life Event</div> */}
+    <p className='general spotlight'>Virtual Marriage Ceromony<span className='date'>2020/06/22</span></p>
+    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/-jDu5FKeUKI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p className='general'>Joined <HighlightLink text='Turo' href='https://www.turo.com'/> DevOps Team <span className='date'>2020/06</span></p>
     <p className='side'>Launched <HighlightLink text='MapItOut' href='http://mapitout.github.io/'/> with my wife <span className='date'>2020/04</span></p>
-    <p className='general'><b>Get married</b> with my amazing wife 🎊🎊🎊 <span className='date'>2020/03</span></p>
+    <p className='general spotlight'><b>Get married</b> with my amazing wife 🎊🎊🎊 <span className='date'>2020/03</span></p>
     <p className='general'>Graduated from <HighlightLink text='YC Startup School Online' href='https://www.startupschool.org'/><span className='date'>2019/10</span></p>
     <p className='side'>Launched <HighlightLink text='DecoHash' href='https://decohash.com/#/'/><span className='date'>2019/08</span></p>
     <p className='general'>Joined <HighlightLink text='Minted' href='https://www.minted.com'/> Software Architecture Team <span className='date'>2019/03</span></p>
@@ -21,7 +23,7 @@ export default () => (<div className='timeline-component'>
     <p className='side'>Launched <HighlightLink href='https://www.facebook.com/revieweer' text='revieweer'/><span className='date'>2018/02</span></p>
     <p className='side'>Launched <b>Shepherd</b> side project <span className='date'>2017/10</span></p>
     <p className='general'>Served as CTO at <b>Ventured Network</b> <span className='date'>2017/08</span></p>
-    <p className='general'>Bought my first <b>Ethereum($42)</b> and <b>Bitcoin($1240)</b> <span className='date'>2017/04</span></p>
+    <p className='general spotlight'>Bought my first <b>Ethereum($42)</b> and <b>Bitcoin($1240)</b> <span className='date'>2017/04</span></p>
     <p className='move'>Fremont ✈ Berkeley in 2016</p>
     <p className='side'>Built <b>Seperpay</b> side project <span className='date'>2016/07</span></p>
     <p className='side'>Built <b>JobRM</b> side project <span className='date'>2015/06</span></p>
@@ -29,7 +31,7 @@ export default () => (<div className='timeline-component'>
     <p className='general'>Studied fullstack JS at <b>CodingHouse</b> <span className='date'>2016/04</span></p>
     <p className='move'>Mountain View ✈ Fremont in 2016</p>
     <p className='general'>Served as CTO of <b>YeahEdu</b> <span className='date'>2015/12</span></p>
-    <p className='general'>Changed Major to <b>Anthropology</b> <span className='date'>2015/08</span></p>
+    <p className='general spotlight'>Changed Major to <b>Anthropology</b> <span className='date'>2015/08</span></p>
     <p className='general'>Did <b>Archaeology</b> in Ireland <span className='date'>2015/07</span></p>
     <p className='side'>Built <b>Groove Trend</b> side project <span className='date'>2015/04</span></p>
     <p className='general'>Founded <b>Foothill Taiwanese Association</b> <span className='date'>2014/11</span></p>
@@ -40,10 +42,10 @@ export default () => (<div className='timeline-component'>
     <p className='general'>Studied economics at <b>SJTU</b> <span className='date'>2012/08</span></p>
     <p className='move'>Taipei ✈ Shanghai in 2012</p>
     <p className='general'><b>Graduated</b> from <b>HSNU</b> <span className='date'>2012/08</span></p>
-    <p className='general'>Won <b>Golden Medal</b> of <b>Taiwan Geography Olympiad</b> <span className='date'>2011/12</span></p>
+    <p className='general'>Won <b>Golden Medal</b> of <b>Geography Olympiad</b> <span className='date'>2011/12</span></p>
     <p className='move'>New Taipei ✈ Taipei in 2006</p>
     <p className='general'>Authored <b>ㄅㄨ！ㄅㄨ！車 comic series</b> <span className='date2004/'></span></p>
     <p className='move'>Yun Lin ✈ New Taipei in 1996</p>
-    <p className='general'>Born in <b>Yun Lin</b> on Valentines Day. <span className='date'>1994/02/14</span></p>
+    <p className='general spotlight'>Born in <b>Yun Lin</b> on Valentines Day. <span className='date'>1994/02/14</span></p>
     <p className='move'>Heaven ✈ World in 1994</p>
 </div>)
